@@ -7,6 +7,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="jquery.transposer.css" />
 </head>
 
 <body>
@@ -39,10 +40,52 @@
   </div>
   </nav>
 
+  <!-- main body -->
+  <div class="container-fluid">
+  <div class="jumbotron">
+    <h1> A Pure Heart</h1>
+
+    <pre data-key="E">
+  [Verse 1]
+  E                              A
+  A pure heart that's what I long for
+     F#m                  B         E   B7
+  A heart that follows hard after Thee
+
+  [Chorus]
+     A                       B
+  A heart that hides Your Word
+            G#m               C#m
+  So that sin will not come in
+     A                     B7
+  A heart that's undivided
+       E                  E7
+  But one You rule and reign
+
+     A                         B
+  A heart that beats compassion
+             G#m        C#m
+  That pleases You my Lord
+     A                     F#m
+  A sweet aroma of worship
+        A      B        E
+  That rises to Your throne
+    </pre>
+  </div>
+  </div>
+
   <!-- JS placed at end of document to load page faster -->
   <!-- JQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <!-- Bootstrap JS -->
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!-- for transpose -->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="jquery.transposer.js"></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
 </body>
 </html>
