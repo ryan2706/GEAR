@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>About COTL - GEAR</title>
+  <title>About Site - GEAR</title>
   <!-- Viewport for mobile devices -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- force IE to use latest rendering mode -->
@@ -9,13 +9,6 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-  <!-- style for google maps -->
-  <style>
-    #map {
-      width: 500px;
-      height: 400px;
-    }
-  </style>
 </head>
 
 <body>
@@ -47,13 +40,13 @@
           <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li>
-              <a href="http://ryan2706.github.io/GEAR/about/aboutSite.html" title="About Site">
+              <a href="#" title="About Site">
                 <span class="glyphicon glyphicon-question-sign"></span>
                 About Site
               </a>
             </li>
             <li>
-              <a href="http://ryan2706.github.io/GEAR/about/aboutCOTL.html" title="About COTL">
+              <a href="#" title="About COTL">
                 <span class="glyphicon glyphicon-info-sign"></span>
                 About COTL
               </a>
@@ -75,26 +68,39 @@
   </div>
   <div class="container-fluid">
   <div class="jumbotron jumbotron-fluid">
-    <h1>About COTL</h1>
-    <div class="row">
-    <div class="table-responsive col-md-6">
-      <table cellpadding="10">
-        <tr>
-          <td><div id="map"></div></td>
-        </tr>
-      </table>
-    </div>
+    <h1>About Site</h1>
+    <p>
+      My name is Ryan Cheng. This site is developed by me and by my own accord only.<br>
+      This is my own personal project for the worship ministry of Church Of the True Light (COTL), that I'm currently serving.<br>
+      The purpose of this site is to host our repertoire of worship songs we've ever played.<br>
+      <em style="color:red;">
+        All songs hosted in this site do not belong to me.<br>
+        All songs are copyrighted properties of its owner(s).<br>
+      </em>
+    </p>
 
-    <div class="table-responsive col-md-6" style="vertical-align: center">
-      <p>
-        <strong>Church Of the True Light</strong><br>
-        25G Perak Road, Singapore 208142<br>
-        +65 6294 0797<br>
-        mail@truelight.org.sg
-      </p>
-    </div>
-    </div>
+    <h3>Acknowledgement and Special Thanks</h3>
+    <p>
+      <a href="https://github.com/jessegavin/jQuery-Chord-Transposer">jQuery Chord Transpose Plugin</a> by Jesse Gavin<br>
+      This site is developed using HTML5, JavaScript and <a href="http://getbootstrap.com/">Bootstrap v3.3.6</a><br>
+      This site is hosted on <a href="https://github.com/">GitHub</a>. Thank you for the web hosting service
+      and being an essential tool in this project.<br>
+      This site is developed using <a href="https://atom.io/">Atom v1.7.3</a><br>
+    </p>
 
+    <h3>Contact me</h3>
+    <p>
+      If there are any errors to any of the chord chart, or you would like to submit a new song,<br>
+      feel free to email me at <em>rock2706@hotmail.com</em><br>
+    </p>
+
+    <h3>Developer's comment</h3>
+    <p>
+      This site is developed using only client-side coding (HTML5, JavaScript and CSS).<br>
+      Thus several functions and requirements may not be implemented yet, such as search function.<br>
+      If you are a web developer and would like to participate in this project,<br>
+      feel free to contact me at <em>rock2706@hotmail.com</em>
+    </p>
   </div>
   </div>
 
@@ -113,16 +119,5 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <!-- Bootstrap JS -->
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <!-- JS for google maps -->
-  <script>
-    function initMap() {
-      var mapDiv = document.getElementById('map');
-      var map = new google.maps.Map(mapDiv, {
-        center: {lat: 1.305212, lng: 103.853968},
-        zoom:20
-      });
-    }
-  </script>
-  <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
 </body>
 </html>
