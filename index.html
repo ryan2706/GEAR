@@ -12,13 +12,67 @@
 </head>
 
 <body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">GEAR</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="http://ryan2706.github.io/GEAR/index.html" title="Home">
+            <span class="glyphicon glyphicon-home collapsed-element"></span>
+          </a>
+        </li>
+        <li>
+          <a href="#" title="Chord Chart">
+            <span class="glyphicon glyphicon-book collapsed-element"></span>
+          </a>
+        </li>
+        <li>
+          <a href="#" title="About COTL">
+            <span class="glyphicon glyphicon-info-sign"></span>
+          </a>
+        </li>
+        <li>
+          <a href="#" title="About Site">
+            <span class="glyphicon glyphicon-question-sign"></span>
+          </a>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Merchandise</a></li>
+            <li><a href="#">Extras</a></li>
+            <li><a href="#">Media</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="alert alert-warning">
+      This is <strong>NOT</strong> the official Church Of the True Light website
+  </div>
+</div>
+
+  <!--
   <nav class="navbar navbar-default">
     <div class="container-fluid">
     <div class="nav navbar-nav">
       <div class="navbar-header">
         <a class="navbar-brand" href="http://ryan2706.github.io/GEAR/index.html">GEAR</a>
       </div>
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav navbar-right">
         <li class="active">
           <a href="http://ryan2706.github.io/GEAR/index.html" title="Home">
             <span class="glyphicon glyphicon-home collapsed-element"></span>
@@ -43,46 +97,12 @@
     </div>
     </div>
   </nav>
+-->
 
-  <!--
-  <nav class="sidebar sidebar-menu-collapsed">
-    <a href="#" id="justify-icon">
-      <span class="glyphicon glyphicon-align-justify"></span>
-    </a>
-    <ul>
-      <li class="active">
-        <a class="expandable" href="http://ryan2706.github.io/GEAR/index.html" title="Home">
-          <span class="glyphicon glyphicon-home collapsed-element"></span>
-          <span class="expanded-element">Home</span>
-        </a>
-      </li>
-      <li>
-        <a class="expandable" href="#" title="Chord Chart">
-          <span class="glyphicon glyphicon-book collapsed-element"></span>
-          <span class="expanded-element">Chord Charts</span>
-        </a>
-      </li>
-      <li>
-        <a class="expandable" href="#" title="About COTL">
-          <span class="glyphicon glyphicon-info-sign"></span>
-          <span class="expanded-element">About COTL</span>
-        </a>
-      </li>
-      <li>
-        <a class="expandable" href="#" title="About Site">
-          <span class="glyphicon glyphicon-question-sign"></span>
-          <span class="expanded-element">About Site</span>
-        </a>
-      </li>
-    </ul>
-  </nav>
-  -->
+
 
   <!-- main body -->
   <div class="container-fluid">
-  <div class="alert alert-warning">
-      This is <strong>NOT</strong> the official Church Of the True Light website
-  </div>
   <div class="jumbotron jumbotron-fluid">
     <!-- carousel begins -->
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -97,6 +117,10 @@
         <div class="carousel-inner" role="listbox">
           <div class="item active">
             <img src="http://ryan2706.github.io/GEAR/carouselMedia/banner---piano.jpg" height="500px">
+            <div class="carousel-caption" style="display: inline-block;">
+              <h3 style="text-align:right; text-shadow: #000 0px 0px 10px;">Psalm 33:3</h3>
+              <p style="text-align:right; text-shadow: #000 0px 0px 10px;">Sing to him a new song;<br>play skillfully, and shout for joy.</p>
+            </div>
           </div>
 
           <div class="item">
@@ -111,8 +135,8 @@
           <div class="item">
             <img src="http://ryan2706.github.io/GEAR/carouselMedia/banner---electricGuitar.jpg"height="500px">
             <div class="carousel-caption">
-              <h3>Psalm 66:4</h3>
-              <p>All the earth worships you and sings praises to you; they sing praises to your name.</p>
+              <h3 style="color: black; text-align:right; text-shadow: #fff 0px 0px 1px;">Psalm 66:4</h3>
+              <p style="color:black; text-align:right; text-shadow: #fff 0px 0px 1px;">All the earth worships you and<br>sings praises to you;<br>they sing praises to your name.</p>
             </div>
           </div>
         </div>
@@ -135,8 +159,8 @@
   <footer class="footer">
     <div class="container">
       <p class="text-muted" style="text-align: right;">
-        A Pure Heart<br>
-        is the copyrighted property of its owner(s).
+        GEAR v1.0<br>
+        2016
       </p>
     </div>
   </footer>
