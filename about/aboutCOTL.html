@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>GEAR</title>
+  <title>About COTL - GEAR</title>
   <!-- Viewport for mobile devices -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- force IE to use latest rendering mode -->
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <!-- style for google maps -->
+  <style>
+    #map {
+      width: 500px;
+      height: 400px;
+    }
+  </style>
 </head>
 
 <body>
@@ -24,7 +32,7 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li class="active">
+        <li>
           <a href="http://ryan2706.github.io/GEAR/index.html" title="Home">
             <span class="glyphicon glyphicon-home collapsed-element"></span>
           </a>
@@ -34,7 +42,7 @@
             <span class="glyphicon glyphicon-book collapsed-element"></span>
           </a>
         </li>
-        <li class="dropdown">
+        <li class="dropdown active">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT
           <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -45,7 +53,7 @@
               </a>
             </li>
             <li>
-              <a href="http://ryan2706.github.io/GEAR/about/aboutCOTL.html" title="About COTL">
+              <a href="#" title="About COTL">
                 <span class="glyphicon glyphicon-info-sign"></span>
                 About COTL
               </a>
@@ -67,54 +75,26 @@
   </div>
   <div class="container-fluid">
   <div class="jumbotron jumbotron-fluid">
-    <!-- carousel begins -->
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
+    <h1>About COTL</h1>
+    <div class="row">
+    <div class="table-responsive col-md-6">
+      <table cellpadding="10">
+        <tr>
+          <td><div id="map"></div></td>
+        </tr>
+      </table>
+    </div>
 
-        <!-- wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <img src="http://ryan2706.github.io/GEAR/carouselMedia/banner---piano.jpg" height="500px">
-            <div class="carousel-caption" style="display: inline-block;">
-              <h3 style="text-align:right; text-shadow: #000 0px 0px 10px;">Psalm 33:3</h3>
-              <p style="text-align:right; text-shadow: #000 0px 0px 10px;">Sing to him a new song;<br>play skillfully, and shout for joy.</p>
-            </div>
-          </div>
+    <div class="table-responsive col-md-6" style="vertical-align: center">
+      <p>
+        <strong>Church Of the True Light</strong><br>
+        25G Perak Road, Singapore 208142<br>
+        +65 6294 0797<br>
+        mail@truelight.org.sg
+      </p>
+    </div>
+    </div>
 
-          <div class="item">
-            <img src="http://ryan2706.github.io/GEAR/carouselMedia/banner---drumsticks.jpg" height="500px">
-            <div class="carousel-caption">
-              <h3>Psalm 86:9-10</h3>
-              <p>All the nations you have made will come and worship before you, Lord; they will bring glory to your<br>
-              name. For you are great and do marvelous deeds; you alone are God.</p>
-            </div>
-          </div>
-
-          <div class="item">
-            <img src="http://ryan2706.github.io/GEAR/carouselMedia/banner---electricGuitar.jpg"height="500px">
-            <div class="carousel-caption">
-              <h3 style="color: black; text-align:right; text-shadow: #fff 0px 0px 1px;">Psalm 66:4</h3>
-              <p style="color:black; text-align:right; text-shadow: #fff 0px 0px 1px;">All the earth worships you and<br>sings praises to you;<br>they sing praises to your name.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    <!-- carousel ends -->
   </div>
   </div>
 
@@ -133,5 +113,16 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <!-- Bootstrap JS -->
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!-- JS for google maps -->
+  <script>
+    function initMap() {
+      var mapDiv = document.getElementById('map');
+      var map = new google.maps.Map(mapDiv, {
+        center: {lat: 1.305212, lng: 103.853968},
+        zoom:20
+      });
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
 </body>
 </html>
