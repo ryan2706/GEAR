@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="http://ryan2706.github.io/GEAR/gears.png" />
+  <title>GEAR - Desert Song</title>
+  <!-- Viewport for mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- force IE to use latest rendering mode -->
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="http://ryan2706.github.io/GEAR/css/jquery.transposer.css" />
+</head>
+
+<body>
+  <!-- navbar begins -->
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://ryan2706.github.io/GEAR/index.html">GEAR</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="http://ryan2706.github.io/GEAR/index.html" title="Home">
+            <span class="glyphicon glyphicon-home collapsed-element"></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://ryan2706.github.io/GEAR/charts/chartDir.html" title="Chord Chart">
+            <span class="glyphicon glyphicon-book collapsed-element"></span>
+          </a>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="http://ryan2706.github.io/GEAR/about/aboutSite.html" title="About Site">
+                <span class="glyphicon glyphicon-question-sign"></span>
+                About Site
+              </a>
+            </li>
+            <li>
+              <a href="http://ryan2706.github.io/GEAR/about/aboutCOTL.html" title="About COTL">
+                <span class="glyphicon glyphicon-info-sign"></span>
+                About COTL
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+  <!-- navbar ends -->
+
+  <!-- main body -->
+  <div class="container-fluid">
+  <div class="jumbotron jumbotron-fluid">
+    <h1>Desert Song</h1>
+
+    <pre data-key="D">
+      [Intro]
+      Bm   A   G   D
+
+      [Verse 1]
+      Bm          A              G       D
+      This is my prayer in the desert
+           Bm            A            G     D
+      When all that's within me feels dry
+      Bm                      A       	   G    D
+      This is my prayer in my hunger and need
+      Bm             A         G
+      My God is the God who provides
+
+      [Verse 2]
+      Bm          A             G     D
+      This is my prayer in the fire
+         Bm          A        G     D
+      In weakness or trial or pain
+      Bm         A
+      There is a faith proved
+                    G     D
+      Of more worth than gold
+         Bm        D/F#             G
+      So refine me Lord through the flame
+
+      [Chorus]
+                   D
+      I will bring praise
+                   A
+      I will bring praise
+           	 G                         	  D
+      No weapon formed against me shall remain
+      A/C#      A
+      I will rejoice
+             Bm
+      I will declare
+           	 G          D/A   A    Bm   A   G   D
+      God is my victory and  He is here
+
+      [Verse 3]
+      This is my prayer in the battle
+      When triumph is still on its way
+      I am a conqueror and co-heir with Christ
+      So firm on His promise I'll stand
+
+      [Bridge]
+      Dsus4      D
+      All of my life
+      Dsus4     D
+      In every season
+      Bm
+      You are still God
+                         A
+      I have a reason to sing
+      G              D
+      I have a reason to worship
+
+      [Instrumental]
+      Bm   A   G   D
+
+      [Ending]
+      Bm          A             G
+      This is my prayer in the harvest
+           Bm         A           G
+      When favour and providence flow
+      Bm         A             G
+      I know I'm filled to be emptied again
+          Bm          A             G
+      The seed I've received I will sow
+    </pre>
+  </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="text-muted" style="text-align: right;">
+        Desert Song<br>
+        is the copyrighted property of its owner(s).<br>
+        GEAR v1.0<br>
+      </p>
+    </div>
+  </footer>
+
+  <!-- JS placed at end of document to load page faster -->
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!-- for transpose -->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="http://ryan2706.github.io/GEAR/js/jquery.transposer.js"></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>

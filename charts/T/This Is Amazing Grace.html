@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="http://ryan2706.github.io/GEAR/gears.png" />
+  <title>GEAR - This Is Amazing Grace</title>
+  <!-- Viewport for mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- force IE to use latest rendering mode -->
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="http://ryan2706.github.io/GEAR/css/jquery.transposer.css" />
+</head>
+
+<body>
+  <!-- navbar begins -->
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://ryan2706.github.io/GEAR/index.html">GEAR</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="http://ryan2706.github.io/GEAR/index.html" title="Home">
+            <span class="glyphicon glyphicon-home collapsed-element"></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://ryan2706.github.io/GEAR/charts/chartDir.html" title="Chord Chart">
+            <span class="glyphicon glyphicon-book collapsed-element"></span>
+          </a>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="http://ryan2706.github.io/GEAR/about/aboutSite.html" title="About Site">
+                <span class="glyphicon glyphicon-question-sign"></span>
+                About Site
+              </a>
+            </li>
+            <li>
+              <a href="http://ryan2706.github.io/GEAR/about/aboutCOTL.html" title="About COTL">
+                <span class="glyphicon glyphicon-info-sign"></span>
+                About COTL
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+  <!-- navbar ends -->
+
+  <!-- main body -->
+  <div class="container-fluid">
+  <div class="jumbotron jumbotron-fluid">
+    <h1>This Is Amazing Grace</h1>
+
+    <pre data-key="G">
+      [Verse 1]
+      G
+      Who breaks the power of sin and darkness
+      C
+      Whose love is mighty and so much stronger
+      Em                D                   C
+      The King of Glory, the King above all kings
+
+      Who shakes the whole earth with holy thunder
+      Who leades us breathless in awe and wonder
+      The King of Glory, the King above all kings
+
+      [Chorus]
+                      G
+      This is amazing grace
+                        C
+      This is unfailing love
+                             Em
+      That You would take my place
+                             D
+      That You would bear my cross
+
+                              G
+      You would lay down Your life
+                          C
+      That I would be set free
+      Em
+      Jesus, I sing for
+      D                        G
+      All that You’ve done for me
+
+      [Verse 2]
+      Who brings our chaos back into order
+      Who makes the orphan, a son and daughter
+      The King of Glory, the King above all kings
+
+      Who rules the nations with truth and justice
+      Shines like the sun in all of its brilliance
+      The King of Glory, the King above all kings
+
+      [Bridge]
+      G
+      Worthy is the Lamb who was slain
+      C
+      Worthy is the King who conquered the grave
+      Em
+      Worthy is the Lamb who was slain
+      C
+      Worthy is the King who conquered the grave
+    </pre>
+  </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="text-muted" style="text-align: right;">
+        This Is Amazing Grace<br>
+        is the copyrighted property of its owner(s).<br>
+        GEAR v1.0<br>
+      </p>
+    </div>
+  </footer>
+
+  <!-- JS placed at end of document to load page faster -->
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!-- for transpose -->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="http://ryan2706.github.io/GEAR/js/jquery.transposer.js"></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>
