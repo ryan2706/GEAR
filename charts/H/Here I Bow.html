@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="http://ryan2706.github.io/GEAR/gears.png" />
+  <title>GEAR - Here I Bow</title>
+  <!-- Viewport for mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- force IE to use latest rendering mode -->
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="http://ryan2706.github.io/GEAR/css/jquery.transposer.css" />
+</head>
+
+<body>
+  <!-- navbar begins -->
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://ryan2706.github.io/GEAR/index.html">GEAR</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="http://ryan2706.github.io/GEAR/index.html" title="Home">
+            <span class="glyphicon glyphicon-home collapsed-element"></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://ryan2706.github.io/GEAR/charts/chartDir.html" title="Chord Chart">
+            <span class="glyphicon glyphicon-book collapsed-element"></span>
+          </a>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="http://ryan2706.github.io/GEAR/about/aboutSite.html" title="About Site">
+                <span class="glyphicon glyphicon-question-sign"></span>
+                About Site
+              </a>
+            </li>
+            <li>
+              <a href="http://ryan2706.github.io/GEAR/about/aboutCOTL.html" title="About COTL">
+                <span class="glyphicon glyphicon-info-sign"></span>
+                About COTL
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+  <!-- navbar ends -->
+
+  <!-- main body -->
+  <div class="container-fluid">
+  <div class="jumbotron jumbotron-fluid">
+    <h1>Here I Bow</h1>
+
+    <pre data-key="G">
+      [Intro]
+      C   C   G/B   Em
+
+      [Verse 1]
+                    C   D                     G/B   Em
+      Where would I run but to the throne of mercy
+                      C   D                     Em
+      Where would I kneel but at this cross of grace
+                    C         D                         G/B
+      How great the love, how strong the hand that holds us
+      Em    Am          Dsus   D
+      Beautiful, beautiful
+
+      [Chorus]
+         C       D     G/B        Em
+      So here I bow to lift You high
+        C   D    Am/G   G
+      Jesus be glorified
+      D/F#    C/E    D            Bm     Em
+      In ---- all -- things, for all my life
+             C         D    G    C   C    G/B   Em
+      I am Yours, forever Yours
+
+      [Verse 2]
+      There is a King who bore the scars of healing
+      There is a Son who came in grace and truth
+      How great the love that carries us to kindness
+      Wonderful, wonderful
+
+      [Bridge]
+          C      D         G/B    Em
+      God here and now, be lifted high
+            C        D       G/B   Em
+      Right here and now, be glorified
+                 C       D
+      God of Heaven and Earth
+                 Bm              Em
+      God who brought me back to life
+           C       Dsus   D   C   G   C   G
+      I am Yours, forever Yours
+    </pre>
+  </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="text-muted" style="text-align: right;">
+        Here I Bow<br>
+        is the copyrighted property of its owner(s).<br>
+        GEAR v1.0<br>
+      </p>
+    </div>
+  </footer>
+
+  <!-- JS placed at end of document to load page faster -->
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!-- for transpose -->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="http://ryan2706.github.io/GEAR/js/jquery.transposer.js"></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>
