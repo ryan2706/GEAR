@@ -12,9 +12,9 @@
 
   $.fn.transpose = function(options) {
     var opts = $.extend({}, $.fn.transpose.defaults, options);
-    
+
     var currentKey = null;
-    
+
     var keys = [
       { name: 'Ab',  value: 0,   type: 'F' },
       { name: 'A',   value: 1,   type: 'N' },
@@ -34,7 +34,7 @@
       { name: 'G',   value: 11,  type: 'N' },
       { name: 'G#',  value: 0,   type: 'S' }
     ];
-  
+
     var getKeyByName = function (name) {
         if (name.charAt(name.length-1) == "m") {
           name = name.substring(0, name.length-1);
@@ -61,7 +61,7 @@
         } else if (keyValue < 0) {
             keyValue += 12;
         }
-        
+
         var i=0;
         if (keyValue == 0 || keyValue == 2 || keyValue == 5 || keyValue == 7 || keyValue == 10) {
             // Return the Flat or Sharp Key
@@ -128,11 +128,11 @@
         }
 
         var delta = getDelta(currentKey.value, newKey.value);
-        
+
         $("span.c", target).each(function (i, el) {
             transposeChord(el, delta, newKey);
         });
-        
+
         currentKey = newKey;
     };
 
@@ -165,8 +165,8 @@
         for (var i = 0; i < repeat; i++) o.push(s);
         return o.join("");
     }
-    
-    
+
+
     var isChordLine = function (input) {
         var tokens = input.replace(/\s+/, " ").split(" ");
 
@@ -178,14 +178,14 @@
         }
         return true;
     };
-    
+
     var wrapChords = function (input) {
         return input.replace(opts.chordReplaceRegex, "<span class='c'>$1</span>");
     };
-    
-    
+
+
     return $(this).each(function() {
-    
+
       var startKey = $(this).attr("data-key");
       if (!startKey || $.trim(startKey) == "") {
         startKey = opts.key;
@@ -195,7 +195,7 @@
         throw("Starting key not defined.");
         return this;
       }
-      
+
       currentKey = getKeyByName(startKey);
 
       // Build tranpose links ===========================================
@@ -218,7 +218,7 @@
           $(this).addClass("selected");
           return false;
       });
-      
+
       $(this).before(keysHtml);
 
       var output = [];
@@ -240,8 +240,8 @@
 
 
   $.fn.transpose.defaults = {
-    chordRegex: /^[A-G][b\#]?(2|5|6|7|9|11|13|6\/9|7\-5|7\-9|7\#5|7\#9|7\+5|7\+9|7b5|7b9|7sus2|7sus4|add2|add4|add9|aug|dim|dim7|m\/maj7|m6|m7|m7b5|m9|m11|m13|maj7|maj9|maj11|maj13|mb5|m|sus|sus2|sus4)*(\/[A-G][b\#]*)*$/,
-    chordReplaceRegex: /([A-G][b\#]?(2|5|6|7|9|11|13|6\/9|7\-5|7\-9|7\#5|7\#9|7\+5|7\+9|7b5|7b9|7sus2|7sus4|add2|add4|add9|aug|dim|dim7|m\/maj7|m6|m7|m7b5|m9|m11|m13|maj7|maj9|maj11|maj13|mb5|m|sus|sus2|sus4)*)/g
+    chordRegex: /^[A-G][b\#]?(2|5|6|7|9|11|13|6\/9|7\-5|7\-9|7\#5|7\#9|7\+5|7\+9|7b5|7b9|7sus2|7sus4|add2|add4|add9|aug|dim|dim7|m\/maj7|m6|m7|m7b5|m9|m11|m13|maj7|maj9|maj11|maj13|mb5|m|sus|sus2|sus4|\+)*(\/[A-G][b\#]*)*$/,
+    chordReplaceRegex: /([A-G][b\#]?(2|5|6|7|9|11|13|6\/9|7\-5|7\-9|7\#5|7\#9|7\+5|7\+9|7b5|7b9|7sus2|7sus4|add2|add4|add9|aug|dim|dim7|m\/maj7|m6|m7|m7b5|m9|m11|m13|maj7|maj9|maj11|maj13|mb5|m|sus|sus2|sus4|\+)*)/g
   };
 
 })(jQuery);
