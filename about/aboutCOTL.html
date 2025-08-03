@@ -3,129 +3,170 @@
 <head>
   <link rel="shortcut icon" type="image/x-icon" href="../gears.png" />
   <title>About COTL - GEAR</title>
-  <!-- Viewport for mobile devices -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- force IE to use latest rendering mode -->
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
-  <!-- style for google maps -->
+  <!-- Aesthetic Enhancements -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    #map {
-      width: 500px;
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .jumbotron {
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    h1 {
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    a {
+      color: #0066cc;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .alert-warning {
+      border-radius: 6px;
+    }
+
+    iframe {
+      max-width: 100%;
+      width: 100%;
       height: 400px;
+      border: none;
+    }
+
+    footer.footer {
+      margin-top: 40px;
+      padding-top: 10px;
+    }
+
+    footer.footer p {
+      font-size: 13px;
+      color: #888;
+      text-align: right;
+    }
+
+    .contact-info {
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+
+    .contact-info p {
+      margin: 0;
+      font-size: 24px;
     }
   </style>
 </head>
 
 <body>
-    <!-- navbar begins -->
+  <!-- Navbar -->
   <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="http://ryan2706.github.io/GEAR/index.html">GEAR</a>
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://ryan2706.github.io/GEAR/index.html">GEAR</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active">
+            <a href="http://ryan2706.github.io/GEAR/index.html" title="Home">
+              <span class="glyphicon glyphicon-home collapsed-element"></span>
+            </a>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="http://ryan2706.github.io/GEAR/about/aboutSite.html" title="About Site">
+                  <span class="glyphicon glyphicon-question-sign"></span> About Site
+                </a>
+              </li>
+              <li>
+                <a href="http://ryan2706.github.io/GEAR/about/aboutCOTL.html" title="About COTL">
+                  <span class="glyphicon glyphicon-info-sign"></span> About COTL
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="http://ryan2706.github.io/GEAR/generateDoc.html" title="Generate Document">
+              <span class="glyphicon glyphicon-save-file"></span>
+            </a>
+          </li>
+          <li>
+            <a href="http://ryan2706.github.io/GEAR/search/search.html" title="Search Song Titles">
+              <span class="glyphicon glyphicon-search"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="active">
-          <a href="http://ryan2706.github.io/GEAR/index.html" title="Home">
-            <span class="glyphicon glyphicon-home collapsed-element"></span>
-          </a>
-        </li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT
-          <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li>
-              <a href="http://ryan2706.github.io/GEAR/about/aboutSite.html" title="About Site">
-                <span class="glyphicon glyphicon-question-sign"></span>
-                About Site
-              </a>
-            </li>
-            <li>
-              <a href="http://ryan2706.github.io/GEAR/about/aboutCOTL.html" title="About COTL">
-                <span class="glyphicon glyphicon-info-sign"></span>
-                About COTL
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="http://ryan2706.github.io/GEAR/generateDoc.html" title="Generate Document">
-            <span class="glyphicon glyphicon-save-file"></span>
-          </a>
-        </li>
-        <li>
-          <a href="http://ryan2706.github.io/GEAR/search/search.html" title="Search Song Titles">
-            <span class="glyphicon glyphicon-search"></span>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
   </nav>
-  <!-- navbar ends -->
 
-
-  <!-- main body -->
+  <!-- Alert -->
   <div class="container">
     <div class="alert alert-warning">
-        This is <strong>NOT</strong> the official Church Of the True Light website
+      This is <strong>NOT</strong> the official Church Of the True Light website
     </div>
   </div>
+
+  <!-- Main Content -->
   <div class="container-fluid">
-  <div class="jumbotron jumbotron-fluid">
-    <h1>About COTL</h1>
+    <div class="jumbotron">
+      <h1>About COTL</h1>
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <iframe allowfullscreen
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAKSAIXZt632e33msVeIXppofE4xxcJk24&q=25G+Perak+Rd,+Singapore+208142">
+          </iframe>
+        </div>
+        <div class="col-sm-12 col-md-6 contact-info">
+          <div>
+            <p><strong>Church Of the True Light</strong><br>
+              25G Perak Road, Singapore 208142<br>
+              +65 6294 0797<br>
+              <a href="mailto:mail@truelight.org.sg">mail@truelight.org.sg</a><br>
+              <a href="https://www.truelight.org.sg/">www.truelight.org.sg</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <br><br><br>
+
+      <div>
+        <h1>Service Timings</h1>
+      </div>
+      <p>Kindly refer <a href="https://www.truelight.org.sg/service-timings/">here</a> for COTL's service timings.</p>
+    </div>
+
+    <!-- This is your container-level bottom-right footer -->
     <div class="row">
-    <div class="table-responsive col-md-6">
-      <table cellpadding="10">
-        <tr>
-          <td>
-            <iframe width="500" height="400" frameborder="0" style="border:0" allowfullscreen src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAKSAIXZt632e33msVeIXppofE4xxcJk24&q=25G+Perak+Rd,+Singapore+208142"></iframe>
-          </td>
-        </tr>
-      </table>
+      <div class="col-md-12 text-right">
+        <p class="text-muted" style="margin-top: 10px;">GEAR v1.1</p>
+      </div>
     </div>
-
-    <div class="table-responsive col-md-6" style="vertical-align: center">
-      <p>
-        <strong>Church Of the True Light</strong><br>
-        25G Perak Road, Singapore 208142<br>
-        +65 6294 0797<br>
-        mail@truelight.org.sg<br>
-        <a href="https://www.truelight.org.sg/">https://www.truelight.org.sg/</a>
-      </p>
-    </div>
-    </div>
-
-    <div class="page-header">
-      <h1>Service Timings</h1>
-    </div>
-    <p>Kindly refer <a href="https://www.truelight.org.sg/service-timings/">here</a> for COTL's service timings.</p>
-
-  </div>
   </div>
 
-  <!-- footer -->
-  <footer class="footer">
-    <div class="container">
-      <p class="text-muted" style="text-align: right;">
-        GEAR v1.1<br>
-      </p>
-    </div>
-  </footer>
-
-  <!-- JS placed at end of document to load page faster -->
-  <!-- JQuery -->
+  <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <!-- Bootstrap JS -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
 </body>
 </html>
