@@ -79,7 +79,7 @@
           </a>
         </li>
         <li>
-          <a href="http://ryan2706.github.io/GEAR/search/search.html" title="Search Song Titles">
+          <a href="http://ryan2706.github.io/GEAR/search.html" title="Search Song Titles">
             <span class="glyphicon glyphicon-search"></span>
           </a>
         </li>
@@ -223,7 +223,7 @@
 
     async function init() {
       const tbody = document.getElementById("songRows");
-      const songList = await fetch("search/search.html")
+      const songList = await fetch("search.html")
         .then(res => res.text())
         .then(html => {
           const parser = new DOMParser();
