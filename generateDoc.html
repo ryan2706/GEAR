@@ -22,6 +22,17 @@
     }
     .table thead th { font-weight: 600; }
     .actions-col { width: 1%; white-space: nowrap; }
+    .reorder-col { width: 1%; white-space: nowrap; }
+    .drag-handle {
+      cursor: grab;
+      user-select: none;
+    }
+    tr.dragging {
+      opacity: .5;
+    }
+    /* show drop position */
+    tbody tr.drop-above { box-shadow: 0 -2px 0 #0d6efd inset; }
+    tbody tr.drop-below { box-shadow: 0  2px 0 #0d6efd inset; }
   </style>
 </head>
 
@@ -64,7 +75,7 @@
 
           <div class="card-body">
             <div class="d-flex gap-2 justify-content-between align-items-center mb-3">
-              <div class="text-body-secondary small">Add songs and (optionally) transpose their keys.</div>
+              <div class="text-body-secondary small">Add songs, drag to reorder, and (optionally) transpose their keys.</div>
               <div class="d-flex gap-2">
                 <button id="addRow" class="btn btn-outline-primary btn-sm">
                   <i class="bi bi-plus-lg me-1"></i>Add row
@@ -79,6 +90,7 @@
               <table class="table table-bordered table-striped align-middle mb-3">
                 <thead class="table-light">
                   <tr>
+                    <th class="text-center reorder-col"><i class="bi bi-arrows-move" title="Drag to reorder"></i></th>
                     <th class="text-center" style="width:70%">Song Title</th>
                     <th class="text-center" style="width:25%">Key</th>
                     <th class="text-center actions-col">Actions</th>
@@ -115,7 +127,7 @@
     let songList = [];
     let rowCounter = 0;
 
-    // --- Transpose + helpers (same logic as before) ---
+    // --- Transpose + helpers ---
     const transposeUtil = (() => {
       const keys = [
         { name: 'Ab', value: 0, type: 'F' },{ name: 'A', value: 1, type: 'N' },
@@ -171,6 +183,35 @@
       return sel;
     }
 
+    function addDragBehaviour(tr){
+      tr.draggable = true;
+      tr.addEventListener("dragstart", (e) => {
+        tr.classList.add("dragging");
+        e.dataTransfer.effectAllowed = "move";
+      });
+      tr.addEventListener("dragend", () => {
+        tr.classList.remove("dragging");
+        document.querySelectorAll("#songRows tr").forEach(r => r.classList.remove("drop-above","drop-below"));
+      });
+      tr.addEventListener("dragover", (e) => {
+        e.preventDefault(); // allow drop
+        const dragging = document.querySelector("#songRows tr.dragging");
+        if (!dragging || dragging === tr) return;
+
+        const bbox = tr.getBoundingClientRect();
+        const midpoint = bbox.top + bbox.height / 2;
+        const tbody = document.getElementById("songRows");
+
+        // Visual indicator
+        document.querySelectorAll("#songRows tr").forEach(r => r.classList.remove("drop-above","drop-below"));
+        if (e.clientY < midpoint) tr.classList.add("drop-above"); else tr.classList.add("drop-below");
+
+        // Reinsert on the fly for smoothness
+        if (e.clientY < midpoint) tbody.insertBefore(dragging, tr);
+        else tbody.insertBefore(dragging, tr.nextSibling);
+      });
+    }
+
     function createRow(){
       if (document.querySelectorAll("#songRows tr").length >= MAX_ROWS) {
         alert(`Maximum of ${MAX_ROWS} rows reached.`);
@@ -180,6 +221,11 @@
       rowCounter++;
       const tr = document.createElement("tr");
       tr.dataset.rowId = rowCounter;
+
+      // Reorder handle
+      const tdHandle = document.createElement("td");
+      tdHandle.className = "text-center";
+      tdHandle.innerHTML = '<span class="drag-handle" title="Drag to reorder"><i class="bi bi-grip-vertical"></i></span>';
 
       // Title
       const tdTitle = document.createElement("td");
@@ -217,10 +263,14 @@
         } catch { keySel.value = ""; }
       });
 
+      tr.appendChild(tdHandle);
       tr.appendChild(tdTitle);
       tr.appendChild(tdKey);
       tr.appendChild(tdAct);
       document.getElementById("songRows").appendChild(tr);
+
+      // Activate drag & drop on this new row
+      addDragBehaviour(tr);
     }
 
     function clearAllRows(){
@@ -249,8 +299,7 @@
       document.getElementById("addRow").addEventListener("click", createRow);
       document.getElementById("clearAll").addEventListener("click", clearAllRows);
 
-      // Generate
-      document.getElementById("generate").addEventListener("click", generateDoc);
+      // Make existing rows draggable (already handled in createRow)
     }
 
     async function generateDoc(){
@@ -318,6 +367,7 @@
       saveAs(blob, "songs.docx");
     }
 
+    document.getElementById("generate").addEventListener("click", generateDoc);
     init();
   </script>
 </body>
