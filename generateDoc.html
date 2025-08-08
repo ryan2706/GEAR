@@ -213,10 +213,10 @@
           const parser = new DOMParser();
           const doc = parser.parseFromString(html, "text/html");
           // NEW selector for Bootstrap 5 list: <div id="myUL" class="list-group"><a class="list-group-item ...">
-          const links = Array.from(doc.querySelectorAll("#myUL a.list-group-item"));
+          const links = Array.from(doc.querySelectorAll("#myUL a"));   // works for both old <ul><li><a> and new list-group
           return links.map(link => ({
             title: link.textContent.trim(),
-            path: link.getAttribute("href").replace("../", "")
+            path: new URL(link.getAttribute("href"), location.href).pathname // normalize relative paths
           }));
         });
 
