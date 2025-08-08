@@ -21,6 +21,7 @@
       transition: all .2s ease-in-out;
     }
     .table thead th { font-weight: 600; }
+    .actions-col { width: 1%; white-space: nowrap; }
   </style>
 </head>
 
@@ -28,48 +29,23 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="http://ryan2706.github.io/GEAR/index.html">GEAR</a>
+      <a class="navbar-brand" href="index.html">GEAR</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="http://ryan2706.github.io/GEAR/index.html" title="Home">
-              <i class="bi bi-house"></i>
-            </a>
-          </li>
-
+          <li class="nav-item"><a class="nav-link" href="index.html" title="Home"><i class="bi bi-house"></i></a></li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              ABOUT
-            </a>
+            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">ABOUT</a>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="aboutDropdown">
-              <li>
-                <a class="dropdown-item" href="http://ryan2706.github.io/GEAR/about/aboutSite.html" title="About Site">
-                  <i class="bi bi-question-circle me-2"></i>About Site
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="http://ryan2706.github.io/GEAR/about/aboutCOTL.html" title="About COTL">
-                  <i class="bi bi-info-circle me-2"></i>About COTL
-                </a>
-              </li>
+              <li><a class="dropdown-item" href="about/aboutSite.html"><i class="bi bi-question-circle me-2"></i>About Site</a></li>
+              <li><a class="dropdown-item" href="about/aboutCOTL.html"><i class="bi bi-info-circle me-2"></i>About COTL</a></li>
             </ul>
           </li>
-
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="http://ryan2706.github.io/GEAR/generateDoc.html" title="Generate Document">
-              <i class="bi bi-file-earmark-text"></i>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="http://ryan2706.github.io/GEAR/search.html" title="Search Song Titles">
-              <i class="bi bi-search"></i>
-            </a>
-          </li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="generateDoc.html" title="Generate Document"><i class="bi bi-file-earmark-text"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="search.html" title="Search Song Titles"><i class="bi bi-search"></i></a></li>
         </ul>
       </div>
     </div>
@@ -87,12 +63,25 @@
           </div>
 
           <div class="card-body">
+            <div class="d-flex gap-2 justify-content-between align-items-center mb-3">
+              <div class="text-body-secondary small">Add songs and (optionally) transpose their keys.</div>
+              <div class="d-flex gap-2">
+                <button id="addRow" class="btn btn-outline-primary btn-sm">
+                  <i class="bi bi-plus-lg me-1"></i>Add row
+                </button>
+                <button id="clearAll" class="btn btn-outline-secondary btn-sm">
+                  <i class="bi bi-eraser me-1"></i>Clear all
+                </button>
+              </div>
+            </div>
+
             <div class="table-responsive">
               <table class="table table-bordered table-striped align-middle mb-3">
                 <thead class="table-light">
                   <tr>
-                    <th class="text-center" style="width:80%">Song Title</th>
-                    <th class="text-center" style="width:20%">Key</th>
+                    <th class="text-center" style="width:70%">Song Title</th>
+                    <th class="text-center" style="width:25%">Key</th>
+                    <th class="text-center actions-col">Actions</th>
                   </tr>
                 </thead>
                 <tbody id="songRows"></tbody>
@@ -112,222 +101,221 @@
     </div>
   </main>
 
-  <!-- Footer spacer (keeps same layout pattern as other pages) -->
   <footer></footer>
 
-  <!-- JS -->
+  <!-- JS libs -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/FileSaver.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docx@8.5.0/build/index.umd.min.js"></script>
 
   <script>
+    const INITIAL_ROWS = 5;
+    const MAX_ROWS = 40;
     const keyOptions = ["A","A#","Bb","B","C","C#","Db","D","D#","Eb","E","F","F#","Gb","G","G#","Ab"];
+    let songList = [];
+    let rowCounter = 0;
 
-    // --- Transpose utility (unchanged logic, just modern JS formatting) ---
+    // --- Transpose + helpers (same logic as before) ---
     const transposeUtil = (() => {
       const keys = [
-        { name: 'Ab', value: 0, type: 'F' },
-        { name: 'A', value: 1, type: 'N' },
-        { name: 'A#', value: 2, type: 'S' },
-        { name: 'Bb', value: 2, type: 'F' },
-        { name: 'B', value: 3, type: 'N' },
-        { name: 'C', value: 4, type: 'N' },
-        { name: 'C#', value: 5, type: 'S' },
-        { name: 'Db', value: 5, type: 'F' },
-        { name: 'D', value: 6, type: 'N' },
-        { name: 'D#', value: 7, type: 'S' },
-        { name: 'Eb', value: 7, type: 'F' },
-        { name: 'E', value: 8, type: 'N' },
-        { name: 'F', value: 9, type: 'N' },
-        { name: 'F#', value: 10, type: 'S' },
-        { name: 'Gb', value: 10, type: 'F' },
-        { name: 'G', value: 11, type: 'N' },
+        { name: 'Ab', value: 0, type: 'F' },{ name: 'A', value: 1, type: 'N' },
+        { name: 'A#', value: 2, type: 'S' },{ name: 'Bb', value: 2, type: 'F' },
+        { name: 'B', value: 3, type: 'N' },{ name: 'C', value: 4, type: 'N' },
+        { name: 'C#', value: 5, type: 'S' },{ name: 'Db', value: 5, type: 'F' },
+        { name: 'D', value: 6, type: 'N' },{ name: 'D#', value: 7, type: 'S' },
+        { name: 'Eb', value: 7, type: 'F' },{ name: 'E', value: 8, type: 'N' },
+        { name: 'F', value: 9, type: 'N' },{ name: 'F#', value: 10, type: 'S' },
+        { name: 'Gb', value: 10, type: 'F' },{ name: 'G', value: 11, type: 'N' },
         { name: 'G#', value: 0, type: 'S' }
       ];
-
       const chordRegex = /^[A-G][b\#]?(2|4|5|6|7|9|11|13|6\/9|7\-5|7\-9|7\#5|7\#9|7\+5|7\+9|7b5|7b9|7sus2|7sus4|add2|add4|add9|aug|dim|dim7|m\/maj7|m6|m7|m7b5|m9|m11|m13|maj7|maj9|maj11|maj13|mb5|m|sus|sus2|sus4|M7|\+)*(\/[A-G][b\#]*)*$/;
       const chordReplaceRegex = /([A-G][b\#]?(2|4|5|6|7|9|11|13|6\/9|7\-5|7\-9|7\#5|7\#9|7\+5|7\+9|7b5|7b9|7sus2|7sus4|add2|add4|add9|aug|dim|dim7|m\/maj7|m6|m7|m7b5|m9|m11|m13|maj7|maj9|maj11|maj13|mb5|m|sus|sus2|sus4|M7|\+)*)/g;
-
-      function getKeyByName(name) {
-        if (name.endsWith('m')) name = name.slice(0, -1);
-        return keys.find(k => k.name === name);
-      }
-      function getChordRoot(input) {
-        return (input.length > 1 && (input[1] === 'b' || input[1] === '#')) ? input.substr(0,2) : input.substr(0,1);
-      }
-      function getNewKey(oldKey, delta, targetKey) {
+      function getKeyByName(name){ if(name.endsWith('m')) name=name.slice(0,-1); return keys.find(k=>k.name===name); }
+      function getChordRoot(input){ return (input.length>1&&(input[1]==='b'||input[1]==='#'))?input.substr(0,2):input.substr(0,1); }
+      function getNewKey(oldKey, delta, targetKey){
         let keyValue = getKeyByName(oldKey).value + delta;
-        if (keyValue > 11) keyValue -= 12;
-        else if (keyValue < 0) keyValue += 12;
-        let i = 0;
+        if (keyValue > 11) keyValue -= 12; else if (keyValue < 0) keyValue += 12;
         if ([0,2,5,7,10].includes(keyValue)) {
           switch (targetKey.name) {
             case 'A': case 'A#': case 'B': case 'C': case 'C#': case 'D': case 'D#': case 'E': case 'F#': case 'G': case 'G#':
-              for (; i<keys.length; i++) if (keys[i].value === keyValue && keys[i].type === 'S') return keys[i];
+              for (let i=0;i<keys.length;i++) if (keys[i].value===keyValue && keys[i].type==='S') return keys[i];
             default:
-              for (i=0; i<keys.length; i++) if (keys[i].value === keyValue && keys[i].type === 'F') return keys[i];
+              for (let i=0;i<keys.length;i++) if (keys[i].value===keyValue && keys[i].type==='F') return keys[i];
           }
         } else {
-          for (; i<keys.length; i++) if (keys[i].value === keyValue) return keys[i];
+          for (let i=0;i<keys.length;i++) if (keys[i].value===keyValue) return keys[i];
         }
       }
-      function getDelta(oldVal, newVal) {
-        if (oldVal > newVal) return -(oldVal - newVal);
-        if (oldVal < newVal) return newVal - oldVal;
-        return 0;
+      function getDelta(o,n){ if(o>n) return -(o-n); if(o<n) return n-o; return 0; }
+      function isChordLine(line){ const t=line.trim().split(/\s+/); if(!t.length||t[0]==='') return false; return t.every(x=>chordRegex.test(x)); }
+      function isChord(tok){ return chordRegex.test(tok); }
+      function transposeLine(line, delta, targetKey){
+        return line.replace(chordReplaceRegex,(m)=>{ const r=getChordRoot(m); const nr=getNewKey(r,delta,targetKey).name; return nr+m.slice(r.length); });
       }
-      function isChordLine(line) {
-        const tokens = line.trim().split(/\s+/);
-        if (!tokens.length || tokens[0] === '') return false;
-        return tokens.every(t => chordRegex.test(t));
-      }
-      function isChord(token) { return chordRegex.test(token); }
-      function transposeLine(line, delta, targetKey) {
-        return line.replace(chordReplaceRegex, (match) => {
-          const root = getChordRoot(match);
-          const newRoot = getNewKey(root, delta, targetKey).name;
-          return newRoot + match.slice(root.length);
-        });
-      }
-      function transposeContent(text, originalKey, targetKeyName) {
-        const oldKey = getKeyByName(originalKey);
-        const newKey = getKeyByName(targetKeyName);
-        if (!oldKey || !newKey) return text;
-        const delta = getDelta(oldKey.value, newKey.value);
-        return text.split(/\r?\n/).map(line => isChordLine(line) ? transposeLine(line, delta, newKey) : line).join("\n");
+      function transposeContent(text, originalKey, targetKeyName){
+        const oldKey=getKeyByName(originalKey), newKey=getKeyByName(targetKeyName||originalKey);
+        if(!oldKey||!newKey) return text;
+        const delta=getDelta(oldKey.value,newKey.value);
+        return text.split(/\r?\n/).map(line=>isChordLine(line)?transposeLine(line,delta,newKey):line).join("\n");
       }
       return { transposeContent, isChord };
     })();
+    function isSectionLine(line){ return line.startsWith('[') && line.endsWith(']'); }
 
-    function isSectionLine(line) {
-      return line.startsWith('[') && line.endsWith(']');
+    // --- Row helpers ---
+    function createSelect(options, placeholder=""){
+      const sel = document.createElement("select");
+      sel.className = "form-select";
+      sel.appendChild(new Option(placeholder, ""));
+      options.forEach(opt => sel.appendChild(new Option(opt.text || opt, opt.value || opt)));
+      return sel;
     }
 
-    async function init() {
-      const tbody = document.getElementById("songRows");
-
-      // Pull song list from the upgraded search.html
-      const songList = await fetch("search.html")
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const doc = parser.parseFromString(html, "text/html");
-          // NEW selector for Bootstrap 5 list: <div id="myUL" class="list-group"><a class="list-group-item ...">
-          const links = Array.from(doc.querySelectorAll("#myUL a"));   // works for both old <ul><li><a> and new list-group
-          return links.map(link => ({
-            title: link.textContent.trim(),
-            path: new URL(link.getAttribute("href"), location.href).pathname // normalize relative paths
-          }));
-        });
-
-      // Build 10 rows
-      for (let i = 1; i <= 10; i++) {
-        const tr = document.createElement("tr");
-
-        // Song Title select
-        const tdTitle = document.createElement("td");
-        const selTitle = document.createElement("select");
-        selTitle.className = "form-select";
-        selTitle.id = `title${i}`;
-
-        selTitle.appendChild(new Option("", ""));
-        songList.forEach(song => selTitle.appendChild(new Option(song.title, song.path)));
-        tdTitle.appendChild(selTitle);
-
-        // Key select
-        const tdKey = document.createElement("td");
-        const selKey = document.createElement("select");
-        selKey.className = "form-select";
-        selKey.id = `key${i}`;
-        selKey.appendChild(new Option("", ""));
-        keyOptions.forEach(k => selKey.appendChild(new Option(k, k)));
-        tdKey.appendChild(selKey);
-
-        // Auto-fill key on title change
-        selTitle.addEventListener("change", async () => {
-          const selectedPath = selTitle.value;
-          if (!selectedPath) { selKey.value = ""; return; }
-          try {
-            const res = await fetch(selectedPath);
-            const text = await res.text();
-            const parser = new DOMParser();
-            const doc = parser.parseFromString(text, "text/html");
-            const pre = doc.querySelector("pre[data-key]");
-            selKey.value = pre ? pre.getAttribute("data-key") : "";
-          } catch { selKey.value = ""; }
-        });
-
-        tr.appendChild(tdTitle);
-        tr.appendChild(tdKey);
-        tbody.appendChild(tr);
+    function createRow(){
+      if (document.querySelectorAll("#songRows tr").length >= MAX_ROWS) {
+        alert(`Maximum of ${MAX_ROWS} rows reached.`);
+        return;
       }
 
-      // Generate .docx
-      document.getElementById("generate").addEventListener("click", async () => {
-        const { Document, Packer, Paragraph, TextRun } = docx;
-        const children = [];
+      rowCounter++;
+      const tr = document.createElement("tr");
+      tr.dataset.rowId = rowCounter;
 
-        for (let i = 1; i <= 10; i++) {
-          const selTitle = document.getElementById(`title${i}`);
-          if (selTitle.selectedIndex > 0) {
-            const title = selTitle.options[selTitle.selectedIndex].text.trim();
-            const selKey = document.getElementById(`key${i}`);
-            const targetKey = (selKey.value || "").trim();
-            const path = selTitle.value;
+      // Title
+      const tdTitle = document.createElement("td");
+      const titleSel = createSelect(songList.map(s => ({text:s.title, value:s.path})));
+      titleSel.id = `title-${rowCounter}`;
+      tdTitle.appendChild(titleSel);
 
-            try {
-              const res = await fetch(path);
-              const html = await res.text();
-              const parser = new DOMParser();
-              const doc = parser.parseFromString(html, "text/html");
-              const pre = doc.querySelector("pre[data-key]");
-              const originalKey = pre ? pre.getAttribute("data-key") : "";
-              const content = pre ? pre.textContent : "";
-              const transposed = transposeUtil.transposeContent(content, originalKey, targetKey || originalKey);
+      // Key
+      const tdKey = document.createElement("td");
+      const keySel = createSelect(keyOptions, "");
+      keySel.id = `key-${rowCounter}`;
+      tdKey.appendChild(keySel);
 
-              // Title (uppercase + bold)
-              children.push(new Paragraph({
-                children: [ new TextRun({ text: `${title} [${targetKey || originalKey}]`.toUpperCase(), bold: true }) ]
-              }));
-              children.push(new Paragraph({}));
+      // Actions
+      const tdAct = document.createElement("td");
+      tdAct.className = "text-center";
+      const delBtn = document.createElement("button");
+      delBtn.className = "btn btn-outline-danger btn-sm";
+      delBtn.innerHTML = '<i class="bi bi-trash"></i>';
+      delBtn.type = "button";
+      delBtn.addEventListener("click", () => tr.remove());
+      tdAct.appendChild(delBtn);
 
-              // Body with chords bolded and section lines bolded
-              transposed.split(/\r?\n/).forEach(line => {
-                const trimmed = line.trim();
-                if (isSectionLine(trimmed)) {
-                  children.push(new Paragraph({ children: [ new TextRun({ text: trimmed, bold: true }) ], spacing: { after: 0 } }));
-                } else {
-                  const tokens = line.split(/(\s+)/).filter(t => t !== '');
-                  const runs = tokens.map(tok => new TextRun({ text: tok, bold: transposeUtil.isChord(tok) }));
-                  children.push(new Paragraph({ children: runs, spacing: { after: 0 } }));
-                }
-              });
-              children.push(new Paragraph({}));
-            } catch { /* ignore this song if fetch/parse fails */ }
-          }
-        }
-
-        if (children.length === 0) {
-          alert("Please select at least one song.");
-          return;
-        }
-
-        const docOut = new Document({
-          styles: {
-            default: { document: { run: { font: "Courier New" } } }
-          },
-          sections: [{
-            properties: {
-              page: { margin: { top: 720, right: 720, bottom: 720, left: 720 } },
-              column: { space: 708, count: 2 }
-            },
-            children
-          }]
-        });
-
-        const blob = await Packer.toBlob(docOut);
-        saveAs(blob, "songs.docx");
+      // Auto-fill key when picking a title
+      titleSel.addEventListener("change", async () => {
+        const path = titleSel.value;
+        if (!path) { keySel.value = ""; return; }
+        try {
+          const res = await fetch(path);
+          const html = await res.text();
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(html, "text/html");
+          const pre = doc.querySelector("pre[data-key]");
+          keySel.value = pre ? pre.getAttribute("data-key") : "";
+        } catch { keySel.value = ""; }
       });
+
+      tr.appendChild(tdTitle);
+      tr.appendChild(tdKey);
+      tr.appendChild(tdAct);
+      document.getElementById("songRows").appendChild(tr);
+    }
+
+    function clearAllRows(){
+      document.getElementById("songRows").innerHTML = "";
+    }
+
+    // --- Build and wire up page ---
+    async function init(){
+      // Load songs from search.html
+      songList = await fetch("search.html")
+        .then(r => r.text())
+        .then(html => {
+          const doc = new DOMParser().parseFromString(html, "text/html");
+          const links = Array.from(doc.querySelectorAll("#myUL a")); // robust selector
+          return links.map(a => ({
+            title: a.textContent.trim(),
+            path: new URL(a.getAttribute("href"), location.href).pathname
+          }));
+        })
+        .catch(() => []);
+
+      // Seed initial rows
+      for (let i=0; i<INITIAL_ROWS; i++) createRow();
+
+      // Buttons
+      document.getElementById("addRow").addEventListener("click", createRow);
+      document.getElementById("clearAll").addEventListener("click", clearAllRows);
+
+      // Generate
+      document.getElementById("generate").addEventListener("click", generateDoc);
+    }
+
+    async function generateDoc(){
+      const { Document, Packer, Paragraph, TextRun } = docx;
+      const rows = Array.from(document.querySelectorAll("#songRows tr"));
+      const children = [];
+
+      for (const tr of rows){
+        const titleSel = tr.querySelector("select[id^='title-']");
+        if (!titleSel || !titleSel.value) continue;
+
+        const title = titleSel.options[titleSel.selectedIndex].text.trim();
+        const keySel = tr.querySelector("select[id^='key-']");
+        const targetKey = (keySel.value || "").trim();
+        const path = titleSel.value;
+
+        try {
+          const res = await fetch(path);
+          const html = await res.text();
+          const parser = new DOMParser();
+          const hdoc = parser.parseFromString(html, "text/html");
+          const pre = hdoc.querySelector("pre[data-key]");
+          const originalKey = pre ? pre.getAttribute("data-key") : "";
+          const content = pre ? pre.textContent : "";
+          const finalKey = targetKey || originalKey;
+          const transposed = transposeUtil.transposeContent(content, originalKey, finalKey);
+
+          // Title (uppercase + bold)
+          children.push(new Paragraph({
+            children: [ new TextRun({ text: `${title} [${finalKey || originalKey}]`.toUpperCase(), bold: true }) ]
+          }));
+          children.push(new Paragraph({}));
+
+          // Body with chords bolded and section lines bolded
+          transposed.split(/\r?\n/).forEach(line => {
+            const trimmed = line.trim();
+            if (isSectionLine(trimmed)) {
+              children.push(new Paragraph({ children: [ new TextRun({ text: trimmed, bold: true }) ], spacing: { after: 0 } }));
+            } else {
+              const tokens = line.split(/(\s+)/).filter(t => t !== '');
+              const runs = tokens.map(tok => new TextRun({ text: tok, bold: transposeUtil.isChord(tok) }));
+              children.push(new Paragraph({ children: runs, spacing: { after: 0 } }));
+            }
+          });
+          children.push(new Paragraph({}));
+        } catch (e) {
+          console.warn("Failed to fetch/parse:", path, e);
+        }
+      }
+
+      if (!children.length){
+        alert("Please add at least one song.");
+        return;
+      }
+
+      const docOut = new Document({
+        styles: { default: { document: { run: { font: "Courier New" } } } },
+        sections: [{
+          properties: { page: { margin: { top: 720, right: 720, bottom: 720, left: 720 } }, column: { space: 708, count: 2 } },
+          children
+        }]
+      });
+
+      const blob = await Packer.toBlob(docOut);
+      saveAs(blob, "songs.docx");
     }
 
     init();
