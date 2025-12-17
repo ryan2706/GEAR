@@ -926,7 +926,7 @@ function renderAbout() {
                     <ul class="credit-list">
                         <li>Transposition logic inspired by <strong>jQuery Chord Transpose Plugin</strong> by Jesse Gavin.</li>
                         <li><strong>docx</strong> library for document generation.</li>
-                        <li><strong>Note:</strong> This modern version (GEAR 2) uses Vanilla JS and custom CSS, moving away from Bootstrap/jQuery dependencies of the original.</li>
+                        <li><strong>Note:</strong> This modern version (GEAR 3) uses Vanilla JS and custom CSS, moving away from Bootstrap/jQuery dependencies of the original.</li>
                         <li>Gear icon designed by <strong>Freepik</strong>.</li>
                     </ul>
                 </div>
