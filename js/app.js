@@ -136,17 +136,17 @@ function renderHome() {
 
 const carouselData = [
     {
-        img: 'https://ryan2706.github.io/GEAR/carouselMedia/banner---piano.jpg',
+        img: '../banner---piano.jpg',
         verse: '"Sing to him a new song; play skillfully, and shout for joy."',
         ref: 'Psalm 33:3'
     },
     {
-        img: 'https://ryan2706.github.io/GEAR/carouselMedia/banner---drumsticks.jpg',
+        img: '../banner---drumsticks.jpg',
         verse: '"All the nations you have made will come and worship before you, Lord; they will bring glory to your name. For you are great and do marvelous deeds; you alone are God."',
         ref: 'Psalm 86:9-10'
     },
     {
-        img: 'https://ryan2706.github.io/GEAR/carouselMedia/banner---electricGuitar.jpg',
+        img: '../banner---electricGuitar.jpg',
         verse: '"All the earth worships you and sings praises to you; they sing praises to your name."',
         ref: 'Psalm 66:4'
     }
