@@ -1,6 +1,6 @@
 // Main Application Entry Point
 
-console.log('GEAR App Initialized');
+
 
 // Theme Toggle Logic
 const themeToggle = document.getElementById('theme-toggle');
@@ -77,7 +77,7 @@ async function handleNavigation() {
     }
 
     const hash = window.location.hash.slice(1) || '/';
-    console.log('Navigating to:', hash);
+
 
     // Simple route matching
     let routeHandler = routes[hash];
@@ -247,13 +247,18 @@ async function renderSearch() {
     });
 
     // Add event listeners for checkboxes
-    document.getElementById('song-list').addEventListener('change', (e) => {
+    document.getElementById('song-list').addEventListener('change', async (e) => {
         if (e.target.type === 'checkbox') {
             const title = e.target.value;
             if (e.target.checked) {
                 // Check if already in list
                 if (!selectedSongs.some(s => s.title === title)) {
-                    selectedSongs.push({ title: title, keyIndex: 0 }); // Default key 0
+                    // Fetch song to get original key
+                    const song = songsData.find(s => s.title === title);
+                    if (song) {
+                        await fetchSongContent(song);
+                        selectedSongs.push({ title: title, keyIndex: song.originalKeyIndex !== undefined ? song.originalKeyIndex : 0 });
+                    }
                 }
             } else {
                 selectedSongs = selectedSongs.filter(s => s.title !== title);
@@ -784,7 +789,7 @@ window.generateDoc = async () => {
 
                     const runs = [];
                     let lastIndex = 0;
-                    const tagRegex = /<span class="([^"]+)">([^<]+)<\/span>/g;
+                    const tagRegex = /<span class="([^"]+)"[^>]*>([^<]+)<\/span>/g;
                     let match;
 
                     while ((match = tagRegex.exec(line)) !== null) {
@@ -863,7 +868,17 @@ window.generateDoc = async () => {
         });
 
         const blob = await Packer.toBlob(doc);
-        saveAs(blob, "Setlist.docx");
+        const newBlob = new Blob([blob], { type: "application/vnd.openxmlformats-officedocument.wordprocessingml.document" });
+
+        // Manual download fallback to ensure filename is respected
+        const url = window.URL.createObjectURL(newBlob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = "Setlist.docx";
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        window.URL.revokeObjectURL(url);
 
     } catch (error) {
         console.error("Error generating doc:", error);
