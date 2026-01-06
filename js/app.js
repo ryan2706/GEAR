@@ -6,7 +6,6 @@
 const themeToggle = document.getElementById('theme-toggle');
 const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
 
-// Check for saved user preference, if any, on load of the website
 const currentTheme = localStorage.getItem('theme');
 if (currentTheme == 'dark') {
     document.documentElement.setAttribute('data-theme', 'dark');
@@ -32,7 +31,6 @@ const navLinks = document.querySelector('.nav-links');
 if (menuToggle) {
     menuToggle.addEventListener('click', () => {
         navLinks.classList.toggle('active');
-        // Optional: Change icon or animate
     });
 
     // Close menu when a link is clicked
@@ -430,10 +428,10 @@ function transposeText(text, semitones) {
     const lines = text.split('\n');
 
     // Regex for strict validation of a single token as a chord
-    const strictChordRegex = /^([A-G](?:#|b)?)(m|maj|min|dim|aug|sus|add|M|2|4|5|6|7|9|11|13)*(\/[A-G](?:#|b)?)?$/;
+    const strictChordRegex = /^([A-G](?:#|b)?)((?:m|maj|min|dim|aug|sus|add|M|2|4|5|6|7|9|11|13)*)(\/[A-G](?:#|b)?)?$/;
 
     // Regex for finding/replacing chords within a confirmed chord line
-    const chordRegex = /\b([A-G](?:#|b)?)(m|maj|min|dim|aug|sus|add|M|2|4|5|6|7|9|11|13)*(\/[A-G](?:#|b)?)?(?=\s|$)/g;
+    const chordRegex = /\b([A-G](?:#|b)?)((?:m|maj|min|dim|aug|sus|add|M|2|4|5|6|7|9|11|13)*)(\/[A-G](?:#|b)?)?(?=\s|$)/g;
 
     return lines.map(line => {
         const trimmed = line.trim();
@@ -1119,7 +1117,6 @@ function getChordFingering(chordName) {
     const match = chordName.match(/^([A-G](?:#|b)?)/);
     if (match) {
         const root = match[1];
-        // If it's a minor chord?
         const isMinor = chordName.includes('m') && !chordName.includes('maj');
         const fallback = root + (isMinor ? 'm' : '');
         if (fallback !== chordName && CHORD_FINGERINGS[fallback]) {
@@ -1127,7 +1124,6 @@ function getChordFingering(chordName) {
         }
     }
 
-    // Try handling M7 -> maj7 alias dynamically
     if (chordName.endsWith('M7')) {
         const root = chordName.replace('M7', '');
         const maj7Name = root + 'maj7';
