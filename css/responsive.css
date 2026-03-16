@@ -1,43 +1,41 @@
 /* Mobile Navigation & Responsiveness */
 
-/* Menu Toggle Button */
 .menu-toggle {
-    display: none; /* Hidden by default on desktop */
+    display: none;
     padding: var(--spacing-sm);
     cursor: pointer;
-    color: var(--text-color);
+    color: var(--text-muted);
+    transition: color var(--transition-fast);
 }
 
 .menu-toggle:hover {
     color: var(--primary-color);
 }
 
-/* Mobile Media Query */
+/* ── Mobile ── */
 @media (max-width: 768px) {
-    /* Navigation */
     .menu-toggle {
         display: block;
     }
 
     .nav-links {
-        display: none; /* Hidden by default on mobile */
+        display: none;
         position: absolute;
-        top: 100%; /* Below header */
+        top: 100%;
         left: 0;
         width: 100%;
         flex-direction: column;
         background-color: var(--surface-color);
         border-bottom: 1px solid var(--border-color);
-        padding: var(--spacing-md);
+        padding: var(--spacing-md) var(--spacing-lg);
         gap: var(--spacing-md);
         box-shadow: var(--shadow-md);
     }
 
     .nav-links.active {
-        display: flex; /* Show when active */
+        display: flex;
     }
 
-    /* Layout Adjustments */
     .navbar {
         padding: var(--spacing-sm) var(--spacing-md);
     }
@@ -47,16 +45,23 @@
     }
 
     .hero-carousel-section {
-        margin: 0 -1rem; /* Less negative margin on mobile */
+        margin: 0 -1rem;
     }
 
     .carousel-container {
-        height: 250px; /* Smaller height for mobile */
+        height: 260px;
     }
 
-    /* Typography */
+    .carousel-text blockquote {
+        font-size: 1.25rem;
+    }
+
+    .carousel-overlay {
+        padding: 1.75rem 1.25rem;
+    }
+
     .hero h1 {
-        font-size: 2.5rem; /* Smaller hero text */
+        font-size: 2.75rem;
     }
 
     .hero p {
@@ -64,18 +69,48 @@
     }
 
     .song-detail h1 {
-        font-size: 1.75rem;
+        font-size: 1.875rem;
     }
-    
-    /* Ensure content doesn't overflow */
+
     pre {
-        white-space: pre-wrap; /* Wrap chords/lyrics if they get too long */
+        white-space: pre-wrap;
         word-break: break-word;
-        font-size: 0.9rem; /* Slightly smaller for mobile */
+        font-size: 0.875rem;
     }
 
     .transposition-controls {
-        flex-wrap: wrap; /* Stack controls if needed */
+        flex-wrap: wrap;
         width: 100%;
+    }
+
+    .verse-card blockquote {
+        font-size: 1.125rem;
+    }
+
+    .feature-card {
+        padding: 1.75rem 1.5rem;
+    }
+
+    .about-card {
+        padding: 1.5rem;
+    }
+
+    .song-content {
+        padding: 1.5rem;
+    }
+}
+
+/* ── Small mobile ── */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2.25rem;
+    }
+
+    .logo {
+        font-size: 1.25rem;
+    }
+
+    .carousel-text blockquote {
+        font-size: 1.125rem;
     }
 }

@@ -746,7 +746,7 @@ window.generateDoc = async () => {
                             font: "Courier New"
                         })
                     ],
-                    spacing: { before: 400, after: 200 },
+                    spacing: { before: 0, after: 0, line: 240, lineRule: "auto" },
                     keepNext: true
                 }));
 
@@ -771,7 +771,7 @@ window.generateDoc = async () => {
                                     size: 24 // 12pt
                                 })
                             ],
-                            spacing: { before: 100, after: 0 }
+                            spacing: { before: 0, after: 0, line: 240, lineRule: "auto" }
                         }));
                         continue;
                     }
@@ -835,7 +835,7 @@ window.generateDoc = async () => {
 
                     children.push(new Paragraph({
                         children: runs,
-                        spacing: { after: 0 }
+                        spacing: { before: 0, after: 0, line: 240, lineRule: "auto" }
                     }));
                 }
 
@@ -846,6 +846,16 @@ window.generateDoc = async () => {
         }
 
         const doc = new Document({
+            styles: {
+                default: {
+                    document: {
+                        run: { font: "Courier New", size: 24 },
+                        paragraph: {
+                            spacing: { before: 0, after: 0, line: 240, lineRule: "auto" }
+                        }
+                    }
+                }
+            },
             sections: [{
                 properties: {
                     column: {
