@@ -1,123 +1,192 @@
 [
   {
     "title": "10,000 Reasons",
-    "url": "charts/number/10000_Reasons.html"
+    "url": "charts/number/10000_Reasons.html",
+    "ccli": "6016351",
+    "bpm": "73",
+    "timeSignature": "4/4 time"
   },
   {
     "title": "A Broken Spirit",
-    "url": "charts/A/A%20Broken%20Spirit.html"
+    "url": "charts/A/A%20Broken%20Spirit.html",
+    "ccli": "1175287"
   },
   {
     "title": "A Pure Heart",
-    "url": "charts/A/A%20Pure%20Heart.html"
+    "url": "charts/A/A%20Pure%20Heart.html",
+    "ccli": "452695"
   },
   {
     "title": "A Voice for Worship",
-    "url": "charts/A/A%20Voice%20for%20Worship.html"
+    "url": "charts/A/A%20Voice%20for%20Worship.html",
+    "ccli": "3195079"
   },
   {
     "title": "Abide",
-    "url": "charts/A/Abide.html"
+    "url": "charts/A/Abide.html",
+    "ccli": "7168160",
+    "bpm": "49(147)",
+    "timeSignature": "6/8 time"
   },
   {
     "title": "Above All",
-    "url": "charts/A/Above%20All.html"
+    "url": "charts/A/Above%20All.html",
+    "ccli": "2672885",
+    "bpm": "62",
+    "timeSignature": "4/4 time"
   },
   {
     "title": "Above All Else",
-    "url": "charts/A/Above%20All%20Else.html"
+    "url": "charts/A/Above%20All%20Else.html",
+    "ccli": "5183"
   },
   {
     "title": "Ah Lord God",
-    "url": "charts/A/Ah%20Lord%20God.html"
+    "url": "charts/A/Ah%20Lord%20God.html",
+    "ccli": "17896",
+    "bpm": "126",
+    "timeSignature": "4/4 time"
   },
   {
     "title": "Alabaster Jar",
-    "url": "charts/A/Alabaster%20Jar.html"
+    "url": "charts/A/Alabaster%20Jar.html",
+    "ccli": "4887630",
+    "bpm": "77",
+    "timeSignature": "4/4 time"
   },
   {
     "title": "Alas and Did My Savior Bleed",
-    "url": "charts/A/Alas%20and%20Did%20My%20Savior%20Bleed.html"
+    "url": "charts/A/Alas%20and%20Did%20My%20Savior%20Bleed.html",
+    "ccli": "7079009"
   },
   {
     "title": "All Hail The Power of Jesus' Name",
-    "url": "charts/A/All%20Hail%20The%20Power%20of%20Jesus'%20Name.html"
+    "url": "charts/A/All%20Hail%20The%20Power%20of%20Jesus'%20Name.html",
+    "ccli": "25400",
+    "bpm": "96",
+    "timeSignature": "4/4 time"
   },
   {
     "title": "All Heaven Declares",
-    "url": "charts/A/All%20Heaven%20Declares.html"
+    "url": "charts/A/All%20Heaven%20Declares.html",
+    "ccli": "120556",
+    "timeSignature": "4/4 time"
   },
   {
     "title": "All I Need is You",
-    "url": "charts/A/All%20I%20Need%20is%20You.html"
+    "url": "charts/A/All%20I%20Need%20is%20You.html",
+    "ccli": "4455213",
+    "bpm": "75",
+    "timeSignature": "4/4 time"
   },
   {
     "title": "All Nations",
-    "url": "charts/A/All%20Nations.html"
+    "url": "charts/A/All%20Nations.html",
+    "ccli": "154869"
   },
   {
     "title": "All Of My Days",
-    "url": "charts/A/All%20Of%20My%20Days.html"
+    "url": "charts/A/All%20Of%20My%20Days.html",
+    "ccli": "3258208"
   },
   {
     "title": "All on the Altar",
-    "url": "charts/A/All%20on%20the%20Altar.html"
+    "url": "charts/A/All%20on%20the%20Altar.html",
+    "ccli": "7075162",
+    "bpm": "60",
+    "timeSignature": "4/4 time"
   },
   {
     "title": "All The Earth Will Sing Your Praises",
-    "url": "charts/A/All%20The%20Earth%20Will%20Sing%20Your%20Praises.html"
+    "url": "charts/A/All%20The%20Earth%20Will%20Sing%20Your%20Praises.html",
+    "ccli": "4037057",
+    "bpm": "130",
+    "timeSignature": "4/4 time"
   },
   {
     "title": "All the Earth",
-    "url": "charts/A/All%20the%20Earth.html"
+    "url": "charts/A/All%20the%20Earth.html",
+    "ccli": "3287499",
+    "bpm": "77",
+    "timeSignature": "4/4 time"
   },
   {
     "title": "All The Heavens",
-    "url": "charts/A/All%20The%20Heavens.html"
+    "url": "charts/A/All%20The%20Heavens.html",
+    "ccli": "3490585",
+    "bpm": "66",
+    "timeSignature": "4/4 time"
   },
   {
     "title": "All To Jesus I Surrender",
-    "url": "charts/A/All%20To%20Jesus%20I%20Surrender.html"
+    "url": "charts/A/All%20To%20Jesus%20I%20Surrender.html",
+    "ccli": "4836083"
   },
   {
     "title": "Amazing Grace (My Chains are Gone)",
-    "url": "charts/A/Amazing%20Grace%20(My%20Chains%20are%20Gone).html"
+    "url": "charts/A/Amazing%20Grace%20(My%20Chains%20are%20Gone).html",
+    "ccli": "4768151",
+    "bpm": "60",
+    "timeSignature": "4/4 time"
   },
   {
     "title": "Amazing Grace",
-    "url": "charts/A/Amazing%20Grace.html"
+    "url": "charts/A/Amazing%20Grace.html",
+    "ccli": "2762836"
   },
   {
     "title": "Ancient of Days",
-    "url": "charts/A/Ancient%20of%20Days.html"
+    "url": "charts/A/Ancient%20of%20Days.html",
+    "ccli": "798108",
+    "bpm": "87",
+    "timeSignature": "4/4 time"
   },
   {
     "title": "Ancient of Days (Though the nations rage)",
-    "url": "charts/A/Ancient%20of%20Days%20(Though%20the%20nations%20rage).html"
+    "url": "charts/A/Ancient%20of%20Days%20(Though%20the%20nations%20rage).html",
+    "ccli": "7121851",
+    "bpm": "80",
+    "timeSignature": "3/4 time"
   },
   {
     "title": "Angels We Have Heard On High",
-    "url": "charts/A/Angels%20We%20Have%20Heard%20On%20High.html"
+    "url": "charts/A/Angels%20We%20Have%20Heard%20On%20High.html",
+    "ccli": "4597683",
+    "bpm": "115",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Arise (One Thing We Ask of You)",
-    "url": "charts/A/Arise%20(One%20Thing%20We%20Ask%20of%20You).html"
+    "url": "charts/A/Arise%20(One%20Thing%20We%20Ask%20of%20You).html",
+    "ccli": "4032337",
+    "bpm": "117",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "As The Deer",
-    "url": "charts/A/As%20The%20Deer.html"
+    "url": "charts/A/As%20The%20Deer.html",
+    "ccli": "1431",
+    "bpm": "74",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "As We Gather",
-    "url": "charts/A/As%20We%20Gather.html"
+    "url": "charts/A/As%20We%20Gather.html",
+    "ccli": "35469",
+    "bpm": "76",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "As We Worship (in Your Presence)",
-    "url": "charts/A/As%20We%20Worship%20(in%20Your%20presence).html"
+    "url": "charts/A/As%20We%20Worship%20(in%20Your%20presence).html",
+    "ccli": "229323"
   },
   {
     "title": "Ascribe Greatness To Our God",
-    "url": "charts/A/Ascribe%20Greatness%20To%20Our%20God.html"
+    "url": "charts/A/Ascribe%20Greatness%20To%20Our%20God.html",
+    "ccli": "31391",
+    "bpm": "58",
+    "timeSignature":"2/2 time"
   },
   {
     "title": "Ascribe To The Lord",
@@ -125,11 +194,16 @@
   },
   {
     "title": "At the Cross (Love Ran Red)",
-    "url": "charts/A/At%20the%20Cross%20(Love%20Ran%20Red).html"
+    "url": "charts/A/At%20the%20Cross%20(Love%20Ran%20Red).html",
+    "ccli": "7017786",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "At the Cross",
-    "url": "charts/A/At%20the%20Cross.html"
+    "url": "charts/A/At%20the%20Cross.html",
+    "ccli": "4591816",
+    "bpm": "81",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Awesome God",
@@ -137,27 +211,45 @@
   },
   {
     "title": "Awesome In This Place (God is Awesome)",
-    "url": "charts/A/Awesome%20In%20This%20Place%20(God%20is%20Awesome).html"
+    "url": "charts/A/Awesome%20In%20This%20Place%20(God%20is%20Awesome).html",
+    "ccli": "3001620",
+    "bpm": "152",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Awesome In This Place",
-    "url": "charts/A/Awesome%20In%20This%20Place.html"
+    "url": "charts/A/Awesome%20In%20This%20Place.html",
+    "ccli": "847554",
+    "bpm": "100",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Be Enthroned",
-    "url": "charts/B/Be%20Enthroned.html"
+    "url": "charts/B/Be%20Enthroned.html",
+    "ccli": "7054178",
+    "bpm": "70",
+    "timeSignature": "4/4 time"
   },
   {
     "title": "Be Still for the Presence of the Lord",
-    "url": "charts/B/Be%20Still%20for%20the%20Presence%20of%20the%20Lord.html"
+    "url": "charts/B/Be%20Still%20for%20the%20Presence%20of%20the%20Lord.html",
+    "ccli": "120824",
+    "bpm": "82",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Be Thou My Vision",
-    "url": "charts/B/Be%20Thou%20My%20Vision.html"
+    "url": "charts/B/Be%20Thou%20My%20Vision.html",
+    "ccli": "7056332",
+    "bpm": "90",
+    "timeSignature":"3/4 time"
   },
   {
     "title": "Be Unto Your Name",
-    "url": "charts/B/Be%20Unto%20Your%20Name.html"
+    "url": "charts/B/Be%20Unto%20Your%20Name.html",
+    "ccli": "2177476",
+    "bpm": "109",
+    "timeSignature":"3/4 time"
   },
   {
     "title": "Be With You (I live to worship You)",
@@ -165,71 +257,119 @@
   },
   {
     "title": "Beautiful Saviour",
-    "url": "charts/B/Beautiful%20Saviour.html"
+    "url": "charts/B/Beautiful%20Saviour.html",
+    "ccli": "4807892",
+    "bpm": "52(156)",
+    "timeSignature":"6/8 time"
   },
   {
     "title": "Because He Lives",
-    "url": "charts/B/Because%20He%20Lives.html"
+    "url": "charts/B/Because%20He%20Lives.html",
+    "ccli": "16880",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Before the Throne of God Above",
-    "url": "charts/B/Before%20the%20Throne%20of%20God%20Above.html"
+    "url": "charts/B/Before%20the%20Throne%20of%20God%20Above.html",
+    "ccli": "2306412",
+    "bpm": "76",
+    "timeSignature":"3/4 time"
   },
   {
     "title": "Behold (Then sings my soul)",
-    "url": "charts/B/Behold%20(Then%20sings%20my%20soul).html"
+    "url": "charts/B/Behold%20(Then%20sings%20my%20soul).html",
+    "ccli": "7068430",
+    "bpm": "73",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Better Is One Day",
-    "url": "charts/B/Better%20Is%20One%20Day.html"
+    "url": "charts/B/Better%20Is%20One%20Day.html",
+    "ccli": "1097451",
+    "bpm": "77",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Blessed Assurance",
-    "url": "charts/B/Blessed%20Assurance.html"
+    "url": "charts/B/Blessed%20Assurance.html",
+    "ccli": "22324",
+    "bpm": "66",
+    "timeSignature": "9/8 time"
   },
   {
     "title": "Blessed Be Your Name",
-    "url": "charts/B/Blessed%20Be%20Your%20Name.html"
+    "url": "charts/B/Blessed%20Be%20Your%20Name.html",
+    "ccli": "3798438",
+    "bpm": "116",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Build My Life",
-    "url": "charts/B/Build%20My%20Life.html"
+    "url": "charts/B/Build%20My%20Life.html",
+    "ccli": "70703450",
+    "bpm": "70",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Came to My Rescue",
-    "url": "charts/C/Came%20to%20My%20Rescue.html"
+    "url": "charts/C/Came%20to%20My%20Rescue.html",
+    "ccli": "4705190",
+    "bpm": "83",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Can't Stop Singing",
-    "url": "charts/C/Can't%20Stop%20Singing.html"
+    "url": "charts/C/Can't%20Stop%20Singing.html",
+    "ccli": "7025140",
+    "bpm": "110",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Captain",
-    "url": "charts/C/Captain.html"
+    "url": "charts/C/Captain.html",
+    "ccli": "7037116",
+    "bpm": "46",
+    "timeSignature":"6/8 time"
   },
   {
     "title": "Celebrate Jesus Celebrate",
-    "url": "charts/C/Celebrate%20Jesus%20Celebrate.html"
+    "url": "charts/C/Celebrate%20Jesus%20Celebrate.html",
+    "ccli": "16859",
+    "bpm": "152",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Change My Heart O God",
-    "url": "charts/C/Change%20My%20Heart%20O%20God.html"
+    "url": "charts/C/Change%20My%20Heart%20O%20God.html",
+    "ccli": "1565",
+    "bpm": "80",
+    "timeSignature": "4/4 time"
   },
   {
     "title": "Christ be Magnified",
-    "url": "charts/C/Christ%20be%20Magnified.html"
+    "url": "charts/C/Christ%20be%20Magnified.html",
+    "ccli": "7139866",
+    "bpm": "72",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Christ is Enough",
-    "url": "charts/C/Christ%20is%20Enough.html"
+    "url": "charts/C/Christ%20is%20Enough.html",
+    "ccli": "6514035",
+    "bpm": "82",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Christmas isn't Christmas",
-    "url": "charts/C/Christmas%20isn't%20Christmas.html"
+    "url": "charts/C/Christmas%20isn't%20Christmas.html",
+    "ccli": "258260"
   },
   {
     "title": "Come As You Are",
-    "url": "charts/C/Come%20As%20You%20Are.html"
+    "url": "charts/C/Come%20As%20You%20Are.html",
+    "ccli": "7017790",
+    "bpm": "135",
+    "timeSignature":"6/8 time"
   },
   {
     "title": "Come Holy Spirit (City Harvest Church)",
@@ -241,23 +381,36 @@
   },
   {
     "title": "Come, Now is the Time to Worship",
-    "url": "charts/C/Come,%20Now%20is%20the%20Time%20to%20Worship.html"
+    "url": "charts/C/Come,%20Now%20is%20the%20Time%20to%20Worship.html",
+    "ccli":"2430948",
+    "bpm":"98",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Complete",
-    "url": "charts/C/Complete.html"
+    "url": "charts/C/Complete.html",
+    "ccli":"3282322"
   },
   {
     "title": "Consuming Fire",
-    "url": "charts/C/Consuming%20Fire.html"
+    "url": "charts/C/Consuming%20Fire.html",
+    "ccli":"3818569",
+    "bpm":"77",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Cornerstone",
-    "url": "charts/C/Cornerstone.html"
+    "url": "charts/C/Cornerstone.html",
+    "ccli":"6158927",
+    "bpm":"71",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Crown Him + Majesty",
-    "url": "charts/C/Crown%20Him%20Majesty.html"
+    "url": "charts/C/Crown%20Him%20Majesty.html",
+    "ccli":"6463818",
+    "bpm":"76",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Dance With Me",
@@ -265,191 +418,311 @@
   },
   {
     "title": "Deep Cries Out",
-    "url": "charts/D/Deep%20Cries%20Out.html"
+    "url": "charts/D/Deep%20Cries%20Out.html",
+    "ccli":"5858156",
+    "bpm":"150",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Deeper in Love",
-    "url": "charts/D/Deeper%20in%20Love.html"
+    "url": "charts/D/Deeper%20in%20Love.html",
+    "ccli":"1942994"
   },
   {
     "title": "Desert Song",
-    "url": "charts/D/Desert%20Song.html"
+    "url": "charts/D/Desert%20Song.html",
+    "ccli":"5060793",
+    "bpm":"120",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Did You Feel the Mountain Tremble",
-    "url": "charts/D/Did%20You%20Feel%20the%20Mountain%20Tremble.html"
+    "url": "charts/D/Did%20You%20Feel%20the%20Mountain%20Tremble.html",
+    "ccli":"1097028",
+    "bpm":"102",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Do It Again",
-    "url": "charts/D/Do%20It%20Again.html"
+    "url": "charts/D/Do%20It%20Again.html",
+    "ccli":"7067555",
+    "bpm":"86",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Down At Your Feet",
-    "url": "charts/D/Down%20At%20Your%20Feet.html"
+    "url": "charts/D/Down%20At%20Your%20Feet.html",
+    "ccli":"121799"
   },
   {
     "title": "Draw Me Close",
-    "url": "charts/D/Draw%20Me%20Close.html"
+    "url": "charts/D/Draw%20Me%20Close.html",
+    "ccli":"1459484",
+    "bpm":"70",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Dwell In Your House",
-    "url": "charts/D/Dwell%20In%20Your%20House.html"
+    "url": "charts/D/Dwell%20In%20Your%20House.html",
+    "ccli":"3001637"
   },
   {
     "title": "Eagle's Wings",
-    "url": "charts/E/Eagle's%20Wings.html"
+    "url": "charts/E/Eagle's%20Wings.html",
+    "ccli":"2478168",
+    "bpm":"70",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Empower Me",
-    "url": "charts/E/Empower%20Me.html"
+    "url": "charts/E/Empower%20Me.html",
+    "ccli":"101874"
   },
   {
     "title": "Endless Praise",
-    "url": "charts/E/Endless%20Praise.html"
+    "url": "charts/E/Endless%20Praise.html",
+    "ccli":"6621430",
+    "bpm":"128",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Ever Be",
-    "url": "charts/E/Ever%20Be.html"
+    "url": "charts/E/Ever%20Be.html",
+    "ccli":"7030065",
+    "bpm":"69",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Everlasting God",
-    "url": "charts/E/Everlasting%20God.html"
+    "url": "charts/E/Everlasting%20God.html",
+    "ccli":"4556538",
+    "bpm":"100",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Everything that has Breath",
-    "url": "charts/E/Everything%20that%20has%20Breath.html"
+    "url": "charts/E/Everything%20that%20has%20Breath.html",
+    "ccli":"3220205",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Faith",
-    "url": "charts/F/Faith.html"
+    "url": "charts/F/Faith.html",
+    "ccli":"3001613"
   },
   {
     "title": "Fall (Holy Spirit come in power)",
-    "url": "charts/F/Fall%20(Holy%20Spirit%20come%20in%20power).html"
+    "url": "charts/F/Fall%20(Holy%20Spirit%20come%20in%20power).html",
+    "ccli":"3367591"
   },
   {
     "title": "For All You've Done",
-    "url": "charts/F/For%20All%20You've%20Done.html"
+    "url": "charts/F/For%20All%20You've%20Done.html",
+    "ccli":"4254689",
+    "bpm":"133",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "For You Alone (You are the Peace)",
-    "url": "charts/F/For%20You%20Alone%20(You%20are%20the%20Peace).html"
+    "url": "charts/F/For%20You%20Alone%20(You%20are%20the%20Peace).html",
+    "ccli":"363492",
+    "bpm":"92",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Forever (Give Thanks to the Lord)",
-    "url": "charts/F/Forever%20(Give%20Thanks%20to%20the%20Lord).html"
+    "url": "charts/F/Forever%20(Give%20Thanks%20to%20the%20Lord).html",
+    "ccli":"3148428",
+    "bpm":"120",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Forever Reign",
-    "url": "charts/F/Forever%20Reign.html"
+    "url": "charts/F/Forever%20Reign.html",
+    "ccli":"5639997",
+    "bpm":"83",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "From the Inside Out",
-    "url": "charts/F/From%20the%20Inside%20Out.html"
+    "url": "charts/F/From%20the%20Inside%20Out.html",
+    "ccli":"4705176",
+    "bpm":"76",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Give Thanks",
-    "url": "charts/G/Give%20Thanks.html"
+    "url": "charts/G/Give%20Thanks.html",
+    "ccli":"20285",
+    "bpm":"80",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Give Us Clean Hands",
-    "url": "charts/G/Give%20Us%20Clean%20Hands.html"
+    "url": "charts/G/Give%20Us%20Clean%20Hands.html",
+    "ccli":"2060208",
+    "bpm":"75",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Glorious Day (Living, He Loved Me)",
-    "url": "charts/G/Glorious%20Day%20(Living,%20He%20Loved%20Me).html"
+    "url": "charts/G/Glorious%20Day%20(Living,%20He%20Loved%20Me).html",
+    "ccli":"5638022",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Glorious Ruin",
-    "url": "charts/G/Glorious%20Ruin.html"
+    "url": "charts/G/Glorious%20Ruin.html",
+    "ccli":"6514059",
+    "bpm":"68",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Glory (Lift Up Your Heads)",
-    "url": "charts/G/Glory%20(Lift%20Up%20Your%20Heads).html"
+    "url": "charts/G/Glory%20(Lift%20Up%20Your%20Heads).html",
+    "ccli":"3744592",
+    "bpm":"114",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Go Tell It On The Mountain",
-    "url": "charts/G/Go%20Tell%20It%20On%20The%20Mountain.html"
+    "url": "charts/G/Go%20Tell%20It%20On%20The%20Mountain.html",
+    "ccli":"29080",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "God Be Praised",
-    "url": "charts/G/God%20Be%20Praised.html"
+    "url": "charts/G/God%20Be%20Praised.html",
+    "ccli":"5521847",
+    "bpm":"72",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "God I Look To You",
-    "url": "charts/G/God%20I%20Look%20To%20You.html"
+    "url": "charts/G/God%20I%20Look%20To%20You.html",
+    "ccli":"5858163",
+    "bpm":"68",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "God is Able",
-    "url": "charts/G/God%20is%20Able.html"
+    "url": "charts/G/God%20is%20Able.html",
+    "ccli":"5894275",
+    "bpm":"79",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "God is Good All the Time",
-    "url": "charts/G/God%20is%20Good%20All%20the%20Time.html"
+    "url": "charts/G/God%20is%20Good%20All%20the%20Time.html",
+    "ccli":"1729073",
+    "bpm":"116",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "God is Here",
-    "url": "charts/G/God%20is%20Here.html"
+    "url": "charts/G/God%20is%20Here.html",
+    "ccli":"6454669",
+    "bpm":"120",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "God is So Good",
-    "url": "charts/G/God%20is%20So%20Good.html"
+    "url": "charts/G/God%20is%20So%20Good.html",
+    "ccli":"7100964",
+    "bpm":"74",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "God of Ages",
-    "url": "charts/G/God%20of%20Ages.html"
+    "url": "charts/G/God%20of%20Ages.html",
+    "ccli":"4869933"
   },
   {
     "title": "God of Calvary",
-    "url": "charts/G/God%20of%20Calvary.html"
+    "url": "charts/G/God%20of%20Calvary.html",
+    "ccli":"7069334",
+    "bpm":"74",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "God of Wonders",
-    "url": "charts/G/God%20of%20Wonders.html"
+    "url": "charts/G/God%20of%20Wonders.html",
+    "ccli":"3118757",
+    "bpm":"82",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "God Will Make A Way",
-    "url": "charts/G/God%20Will%20Make%20A%20Way.html"
+    "url": "charts/G/God%20Will%20Make%20A%20Way.html",
+    "ccli":"458620",
+    "bpm":"63",
+    "timeSignature":"2/2 time"
   },
   {
     "title": "Good Good Father",
-    "url": "charts/G/Good%20Good%20Father.html"
+    "url": "charts/G/Good%20Good%20Father.html",
+    "ccli":"7036612",
+    "bpm":"48",
+    "timeSignature":"6/8 time"
   },
   {
     "title": "Good Grace",
-    "url": "charts/G/Good%20Grace.html"
+    "url": "charts/G/Good%20Grace.html",
+    "ccli":"7122177",
+    "bpm":"71",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Goodness of God",
-    "url": "charts/G/Goodness%20of%20God.html"
+    "url": "charts/G/Goodness%20of%20God.html",
+    "ccli":"7117726",
+    "bpm":"63",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Goodness of Jesus",
-    "url": "charts/G/Goodness%20of%20Jesus.html"
+    "url": "charts/G/Goodness%20of%20Jesus.html",
+    "ccli":"7121854",
+    "bpm":"70",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Great Are You Lord",
-    "url": "charts/G/Great%20Are%20You%20Lord.html"
+    "url": "charts/G/Great%20Are%20You%20Lord.html",
+    "ccli":"6460220",
+    "bpm":"144",
+    "timeSignature":"6/8 time"
   },
   {
     "title": "Great Awakening",
-    "url": "charts/G/Great%20Awakening.html"
+    "url": "charts/G/Great%20Awakening.html",
+    "ccli":"1181642"
   },
   {
     "title": "Great is the Lord",
-    "url": "charts/G/Great%20is%20the%20Lord.html"
+    "url": "charts/G/Great%20is%20the%20Lord.html",
+    "ccli":"10769",
+    "bpm":"72",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Great is Thy Faithfulness (Beginning to End)",
-    "url": "charts/G/Great%20is%20Thy%20Faithfulness%20(Beginning%20to%20End).html"
+    "url": "charts/G/Great%20is%20Thy%20Faithfulness%20(Beginning%20to%20End).html",
+    "ccli":"7109317",
+    "bpm":"100",
+    "timeSignature":"3/4 time"
   },
   {
     "title": "Great is Thy Faithfulness",
-    "url": "charts/G/Great%20is%20Thy%20Faithfulness.html"
+    "url": "charts/G/Great%20is%20Thy%20Faithfulness.html",
+    "ccli":"18723",
+    "bpm":"75",
+    "timeSignature":"3/4 time"
   },
   {
     "title": "Hallelujah to the Lamb",
-    "url": "charts/H/Hallelujah%20to%20the%20Lamb.html"
+    "url": "charts/H/Hallelujah%20to%20the%20Lamb.html",
+    "ccli":"2316323"
   },
   {
     "title": "Happy Birthday to You",
@@ -457,79 +730,130 @@
   },
   {
     "title": "Have It All",
-    "url": "charts/H/Have%20It%20All.html"
+    "url": "charts/H/Have%20It%20All.html",
+    "ccli":"7054173",
+    "bpm":"72",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Healer",
-    "url": "charts/H/Healer.html"
+    "url": "charts/H/Healer.html",
+    "ccli":"4873981",
+    "bpm":"80",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Hear Our Praises",
-    "url": "charts/H/Hear%20Our%20Praises.html"
+    "url": "charts/H/Hear%20Our%20Praises.html",
+    "ccli":"2543402",
+    "bpm":"130",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Heart of Worship",
-    "url": "charts/H/Heart%20of%20Worship.html"
+    "url": "charts/H/Heart%20of%20Worship.html",
+    "ccli":"2296522",
+    "bpm":"70",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Here for You",
-    "url": "charts/H/Here%20for%20You.html"
+    "url": "charts/H/Here%20for%20You.html",
+    "ccli":"5925649",
+    "bpm":"85",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Here I Am to Worship",
-    "url": "charts/H/Here%20I%20Am%20to%20Worship.html"
+    "url": "charts/H/Here%20I%20Am%20to%20Worship.html",
+    "ccli":"3266032",
+    "bpm":"75",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Here I Bow",
-    "url": "charts/H/Here%20I%20Bow.html"
+    "url": "charts/H/Here%20I%20Bow.html",
+    "ccli":"7069335",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Here in Your Presence",
-    "url": "charts/H/Here%20in%20Your%20Presence.html"
+    "url": "charts/H/Here%20in%20Your%20Presence.html",
+    "ccli":"4882707",
+    "bpm":"47",
+    "timeSignature":"6/8 time"
   },
   {
     "title": "Here is My Song",
-    "url": "charts/H/Here%20is%20My%20Song.html"
+    "url": "charts/H/Here%20is%20My%20Song.html",
+    "ccli":"7138723"
   },
   {
     "title": "Highlands",
-    "url": "charts/H/Highlands.html"
+    "url": "charts/H/Highlands.html",
+    "ccli":"7122399",
+    "bpm":"92",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Holy Forever",
-    "url": "charts/H/Holy%20Forever.html"
+    "url": "charts/H/Holy%20Forever.html",
+    "ccli":"7201044",
+    "bpm":"72",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Holy Holy Holy (Lord God Almighty)",
-    "url": "charts/H/Holy%20Holy%20Holy%20(Lord%20God%20Almighty).html"
+    "url": "charts/H/Holy%20Holy%20Holy%20(Lord%20God%20Almighty).html",
+    "ccli":"1156",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Holy is the Lord",
-    "url": "charts/H/Holy%20is%20the%20Lord.html"
+    "url": "charts/H/Holy%20is%20the%20Lord.html",
+    "ccli":"4158039",
+    "bpm":"84",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Holy Spirit (You are welcome here)",
-    "url": "charts/H/Holy%20Spirit%20(You%20are%20welcome%20here).html"
+    "url": "charts/H/Holy%20Spirit%20(You%20are%20welcome%20here).html",
+    "ccli":"6087919",
+    "bpm":"72",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Hosanna (King of Glory)",
-    "url": "charts/H/Hosanna%20(King%20of%20Glory).html"
+    "url": "charts/H/Hosanna%20(King%20of%20Glory).html",
+    "ccli":"4785835",
+    "bpm":"75",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Hosanna (Praise is Rising)",
-    "url": "charts/H/Hosanna%20(Praise%20is%20Rising).html"
+    "url": "charts/H/Hosanna%20(Praise%20is%20Rising).html",
+    "ccli":"4662491",
+    "bpm":"114",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "How A Broken Spirit",
-    "url": "charts/H/How%20A%20Broken%20Spirit.html"
+    "url": "charts/H/How%20A%20Broken%20Spirit.html",
+    "ccli":"1175287"
   },
   {
     "title": "How Can I Keep From Singing",
-    "url": "charts/H/How%20Can%20I%20Keep%20From%20Singing.html"
+    "url": "charts/H/How%20Can%20I%20Keep%20From%20Singing.html",
+    "ccli":"4822372",
+    "bpm":"74",
+    "timeSignature":"12/8 time"
   },
   {
     "title": "How Deep The Father's Love",
-    "url": "charts/H/How%20Deep%20The%20Father's%20Love.html"
+    "url": "charts/H/How%20Deep%20The%20Father's%20Love.html",
+    "ccli":"1558110",
+    "bpm":"54",
+    "timeSignature":"5/4 time"
   },
   {
     "title": "How Do I Live Without You",
@@ -537,63 +861,100 @@
   },
   {
     "title": "How Good It Is (To Give Thanks Unto the Lord)",
-    "url": "charts/H/How%20Good%20It%20Is%20(To%20Give%20Thanks%20Unto%20the%20Lord).html"
+    "url": "charts/H/How%20Good%20It%20Is%20(To%20Give%20Thanks%20Unto%20the%20Lord).html",
+    "ccli":"395484"
   },
   {
     "title": "How Great Is Our God",
-    "url": "charts/H/How%20Great%20Is%20Our%20God.html"
+    "url": "charts/H/How%20Great%20Is%20Our%20God.html",
+    "ccli":"4348399",
+    "bpm":"76",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "How Great Thou Art",
-    "url": "charts/H/How%20Great%20Thou%20Art.html"
+    "url": "charts/H/How%20Great%20Thou%20Art.html",
+    "ccli":"14181",
+    "bpm":"48",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "How Great You Are",
-    "url": "charts/H/How%20Great%20You%20Are.html"
+    "url": "charts/H/How%20Great%20You%20Are.html",
+    "ccli":"1185909"
   },
   {
     "title": "How He Loves",
-    "url": "charts/H/How%20He%20Loves.html"
+    "url": "charts/H/How%20He%20Loves.html",
+    "ccli":"5032549",
+    "bpm":"49",
+    "timeSignature":"6/8 time"
   },
   {
     "title": "Hymn Of Heaven",
-    "url": "charts/H/Hymn%20Of%20Heaven.html"
+    "url": "charts/H/Hymn%20Of%20Heaven.html",
+    "ccli":"7168994",
+    "bpm":"71",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Hymn of the Holy Spirit",
-    "url": "charts/H/Hymn%20of%20the%20Holy%20Spirit.html"
+    "url": "charts/H/Hymn%20of%20the%20Holy%20Spirit.html",
+    "ccli":"7113814",
+    "bpm":"120",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "I Adore",
-    "url": "charts/I/I%20Adore.html"
+    "url": "charts/I/I%20Adore.html",
+    "ccli":"3290716"
   },
   {
     "title": "I Could Sing Of Your Love",
-    "url": "charts/I/I%20Could%20Sing%20Of%20Your%20Love.html"
+    "url": "charts/I/I%20Could%20Sing%20Of%20Your%20Love.html",
+    "ccli":"1043199",
+    "bpm":"92",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "I Exalt Thee",
-    "url": "charts/I/I%20Exalt%20Thee.html"
+    "url": "charts/I/I%20Exalt%20Thee.html",
+    "ccli":"17803",
+    "bpm":"70",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "I Lift My Hands",
-    "url": "charts/I/I%20Lift%20My%20Hands.html"
+    "url": "charts/I/I%20Lift%20My%20Hands.html",
+    "ccli":"5869884",
+    "bpm":"85",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "I Love You, Lord",
-    "url": "charts/I/I%20Love%20You,%20Lord.html"
+    "url": "charts/I/I%20Love%20You,%20Lord.html",
+    "ccli":"25266",
+    "bpm":"76",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "I Need You More",
-    "url": "charts/I/I%20Need%20You%20More.html"
+    "url": "charts/I/I%20Need%20You%20More.html",
+    "ccli":"2061678",
+    "bpm":"112",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "I Raise a Hallelujah",
-    "url": "charts/I/I%20Raise%20a%20Hallelujah.html"
+    "url": "charts/I/I%20Raise%20a%20Hallelujah.html",
+    "ccli":"7119315",
+    "bpm":"82",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "I Simply Live for You",
-    "url": "charts/I/I%20Simply%20Live%20for%20You.html"
+    "url": "charts/I/I%20Simply%20Live%20for%20You.html",
+    "ccli":"3001644"
   },
   {
     "title": "I Surrender",
@@ -601,7 +962,10 @@
   },
   {
     "title": "I Want to be Where You Are",
-    "url": "charts/I/I%20Want%20to%20be%20Where%20You%20Are.html"
+    "url": "charts/I/I%20Want%20to%20be%20Where%20You%20Are.html",
+    "ccli":"14136",
+    "bpm":"63",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "I Will Celebrate, Sing Unto the Lord",
@@ -609,147 +973,241 @@
   },
   {
     "title": "I Will Give Thanks to Thee",
-    "url": "charts/I/I%20Will%20Give%20Thanks%20to%20Thee.html"
+    "url": "charts/I/I%20Will%20Give%20Thanks%20to%20Thee.html",
+    "ccli":"21112",
+    "bpm":"80",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "I Will Rise",
-    "url": "charts/I/I%20Will%20Rise.html"
+    "url": "charts/I/I%20Will%20Rise.html",
+    "ccli":"5183450",
+    "bpm":"82",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "I Will Run to You",
-    "url": "charts/I/I%20Will%20Run%20to%20You.html"
+    "url": "charts/I/I%20Will%20Run%20to%20You.html",
+    "ccli":"1959901",
+    "bpm":"80",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "I will Sing of the Mercies of the Lord",
-    "url": "charts/I/I%20will%20Sing%20of%20the%20Mercies%20of%20the%20Lord.html"
+    "url": "charts/I/I%20will%20Sing%20of%20the%20Mercies%20of%20the%20Lord.html",
+    "ccli":"23316",
+    "bpm":"100",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "I Worship You, Almighty God",
-    "url": "charts/I/I%20Worship%20You,%20Almighty%20God.html"
+    "url": "charts/I/I%20Worship%20You,%20Almighty%20God.html",
+    "ccli":"20807",
+    "bpm":"70",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "In Christ Alone",
-    "url": "charts/I/In%20Christ%20Alone.html"
+    "url": "charts/I/In%20Christ%20Alone.html",
+    "ccli":"3350395",
+    "bpm":"60",
+    "timeSignature":"3/4 time"
   },
   {
     "title": "In Jesus' Name",
-    "url": "charts/I/In%20Jesus'%20Name.html"
+    "url": "charts/I/In%20Jesus'%20Name.html",
+    "ccli":"6454638",
+    "bpm":"104",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "In Moments Like This",
-    "url": "charts/I/In%20Moments%20Like%20This.html"
+    "url": "charts/I/In%20Moments%20Like%20This.html",
+    "ccli":"10082",
+    "bpm":"94",
+    "timeSignature":"3/4 time"
   },
   {
     "title": "In the Presence of the Holy God",
-    "url": "charts/I/In%20the%20Presence%20of%20the%20Holy%20God.html"
+    "url": "charts/I/In%20the%20Presence%20of%20the%20Holy%20God.html",
+    "ccli":"29688"
   },
   {
     "title": "Indescribable",
-    "url": "charts/I/Indescribable.html"
+    "url": "charts/I/Indescribable.html",
+    "ccli":"4403076",
+    "bpm":"60",
+    "timeSignature":"6/8 time"
   },
   {
     "title": "It is Well (Let Go My Soul)",
-    "url": "charts/I/It%20is%20Well%20(Let%20Go%20My%20Soul).html"
+    "url": "charts/I/It%20is%20Well%20(Let%20Go%20My%20Soul).html",
+    "ccli":"7021972",
+    "bpm":"65",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "It is Well (You are the Rock)",
-    "url": "charts/I/It%20is%20Well%20(You%20are%20the%20Rock).html"
+    "url": "charts/I/It%20is%20Well%20(You%20are%20the%20Rock).html",
+    "ccli":"5875665",
+    "bpm":"82",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "It is Well",
-    "url": "charts/I/It%20is%20Well.html"
+    "url": "charts/I/It%20is%20Well.html",
+    "ccli":"25376",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "It's Christmas",
-    "url": "charts/I/It's%20Christmas.html"
+    "url": "charts/I/It's%20Christmas.html",
+    "ccli":"7050425",
+    "bpm":"130",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Jesus I Come",
-    "url": "charts/J/Jesus%20I%20Come.html"
+    "url": "charts/J/Jesus%20I%20Come.html",
+    "ccli":"7119441"
   },
   {
     "title": "Jesus, Lover of My Soul",
-    "url": "charts/J/Jesus%20Lover%20of%20My%20Soul.html"
+    "url": "charts/J/Jesus%20Lover%20of%20My%20Soul.html",
+    "ccli":"1198817",
+    "bpm":"76",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Jesus Shall Take the Highest Honour",
-    "url": "charts/J/Jesus%20Shall%20Take%20the%20Highest%20Honour.html"
+    "url": "charts/J/Jesus%20Shall%20Take%20the%20Highest%20Honour.html",
+    "ccli":"451380",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Jesus, The Centre of It All",
-    "url": "charts/J/Jesus%20The%20Centre%20of%20It%20All.html"
+    "url": "charts/J/Jesus%20The%20Centre%20of%20It%20All.html",
+    "ccli":"6115180",
+    "bpm":"66",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Jesus the Same",
-    "url": "charts/J/Jesus%20the%20Same.html"
+    "url": "charts/J/Jesus%20the%20Same.html",
+    "ccli":"4222099"
   },
   {
     "title": "Jesus We Enthrone You",
-    "url": "charts/J/Jesus%20We%20Enthrone%20You.html"
+    "url": "charts/J/Jesus%20We%20Enthrone%20You.html",
+    "ccli":"37845",
+    "bpm":"154",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Joy (You've turned it all around)",
-    "url": "charts/J/Joy%20(You've%20turned%20it%20all%20around).html"
+    "url": "charts/J/Joy%20(You've%20turned%20it%20all%20around).html",
+    "ccli":"7000098",
+    "bpm":"124",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Joy to the World (Joyful Joyful)",
-    "url": "charts/J/Joy%20to%20the%20World%20(Joyful%20Joyful).html"
+    "url": "charts/J/Joy%20to%20the%20World%20(Joyful%20Joyful).html",
+    "ccli":"7128618",
+    "bpm":"71",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "King of Kings",
-    "url": "charts/K/King%20of%20Kings.html"
+    "url": "charts/K/King%20of%20Kings.html",
+    "ccli":"7127647",
+    "bpm":"68",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "King of My Heart",
-    "url": "charts/K/King%20of%20My%20Heart.html"
+    "url": "charts/K/King%20of%20My%20Heart.html",
+    "ccli":"7046145",
+    "bpm":"68",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Let the Heavens Rejoice",
-    "url": "charts/L/Let%20the%20Heavens%20Rejoice.html"
+    "url": "charts/L/Let%20the%20Heavens%20Rejoice.html",
+    "ccli":"1254476"
   },
   {
     "title": "Let the Peace of God Reign",
-    "url": "charts/L/Let%20the%20Peace%20of%20God%20Reign.html"
+    "url": "charts/L/Let%20the%20Peace%20of%20God%20Reign.html",
+    "ccli":"1839987",
+    "bpm":"69",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Light the Fire Again",
-    "url": "charts/L/Light%20the%20Fire%20Again.html"
+    "url": "charts/L/Light%20the%20Fire%20Again.html",
+    "ccli":"1346920",
+    "bpm":"98",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Lion and the Lamb",
-    "url": "charts/L/Lion%20and%20the%20Lamb.html"
+    "url": "charts/L/Lion%20and%20the%20Lamb.html",
+    "ccli":"7038281",
+    "bpm":"90",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Living Hope",
-    "url": "charts/L/Living%20Hope.html"
+    "url": "charts/L/Living%20Hope.html",
+    "ccli":"7106807",
+    "bpm":"72",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Lord Your Goodness",
-    "url": "charts/L/Lord%20Your%20Goodness.html"
+    "url": "charts/L/Lord%20Your%20Goodness.html",
+    "ccli":"2336097"
   },
   {
     "title": "Lord, I Offer My Life to You",
-    "url": "charts/L/Lord,%20I%20Offer%20My%20Life%20to%20You.html"
+    "url": "charts/L/Lord,%20I%20Offer%20My%20Life%20to%20You.html",
+    "ccli":"1375252",
+    "bpm":"76",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Love of God",
-    "url": "charts/L/Love%20of%20God.html"
+    "url": "charts/L/Love%20of%20God.html",
+    "ccli":"7241154",
+    "bpm":"74",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Made Me Glad",
-    "url": "charts/M/Made%20Me%20Glad.html"
+    "url": "charts/M/Made%20Me%20Glad.html",
+    "ccli":"3290709",
+    "bpm":"90",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Magnificent",
-    "url": "charts/M/Magnificent.html"
+    "url": "charts/M/Magnificent.html",
+    "ccli":"3452750",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Majesty (Here I Am)",
-    "url": "charts/M/Majesty%20(Here%20I%20Am).html"
+    "url": "charts/M/Majesty%20(Here%20I%20Am).html",
+    "ccli":"4219071",
+    "bpm":"68",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Majesty",
-    "url": "charts/M/Majesty.html"
+    "url": "charts/M/Majesty.html",
+    "ccli":"1527",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Making A Difference",
@@ -757,135 +1215,225 @@
   },
   {
     "title": "Man of Sorrows",
-    "url": "charts/M/Man%20of%20Sorrows.html"
+    "url": "charts/M/Man%20of%20Sorrows.html",
+    "ccli":"6476063",
+    "bpm":"72",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Mighty To Save",
-    "url": "charts/M/Mighty%20To%20Save.html"
+    "url": "charts/M/Mighty%20To%20Save.html",
+    "ccli":"4591782",
+    "bpm":"74",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "My Greatest Love is You",
-    "url": "charts/M/My%20Greatest%20Love%20is%20You.html"
+    "url": "charts/M/My%20Greatest%20Love%20is%20You.html",
+    "ccli":"2301534"
   },
   {
     "title": "My Redeemer Lives",
-    "url": "charts/M/My%20Redeemer%20Lives.html"
+    "url": "charts/M/My%20Redeemer%20Lives.html",
+    "ccli":"2397964",
+    "bpm":"138",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "New Doxology",
-    "url": "charts/N/New%20Doxology.html"
+    "url": "charts/N/New%20Doxology.html",
+    "ccli":"5075025",
+    "bpm":"86",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "No Longer Slaves",
-    "url": "charts/N/No%20Longer%20Slaves.html"
+    "url": "charts/N/No%20Longer%20Slaves.html",
+    "ccli":"7030123",
+    "bpm":"74",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "O Come All Ye Faithful",
-    "url": "charts/O/O%20Come%20All%20Ye%20Faithful.html"
+    "url": "charts/O/O%20Come%20All%20Ye%20Faithful.html",
+    "ccli":"31054",
+    "bpm":"110",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "O Come O Come Emmanuel",
-    "url": "charts/O/O%20Come%20O%20Come%20Emmanuel.html"
+    "url": "charts/O/O%20Come%20O%20Come%20Emmanuel.html",
+    "ccli":"31982",
+    "bpm":"76",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "O Come To The Altar",
-    "url": "charts/O/O%20Come%20To%20The%20Altar.html"
+    "url": "charts/O/O%20Come%20To%20The%20Altar.html",
+    "ccli":"7051511",
+    "bpm":"140",
+    "timeSignature":"6/8 time"
   },
   {
     "title": "O Praise the Name (Anatasis)",
-    "url": "charts/O/O%20Praise%20the%20Name%20(Anatasis).html"
+    "url": "charts/O/O%20Praise%20the%20Name%20(Anatasis).html",
+    "ccli":"7037787",
+    "bpm":"72",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Oceans",
-    "url": "charts/O/Oceans.html"
+    "url": "charts/O/Oceans.html",
+    "ccli":"6428767",
+    "bpm":"60",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Offering (The Sun Cannot Compare)",
-    "url": "charts/O/Offering%20(The%20Sun%20Cannot%20Compare).html"
+    "url": "charts/O/Offering%20(The%20Sun%20Cannot%20Compare).html",
+    "ccli":"3956562",
+    "bpm":"66",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Oh Lord, You're Beautiful",
-    "url": "charts/O/Oh%20Lord,%20Youre%20Beautiful.html"
+    "url": "charts/O/Oh%20Lord,%20Youre%20Beautiful.html",
+    "ccli":"14514",
+    "bpm":"54",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Oh the Glory of His Presence",
-    "url": "charts/O/Oh%20the%20Glory%20of%20His%20Presence.html"
+    "url": "charts/O/Oh%20the%20Glory%20of%20His%20Presence.html",
+    "ccli":"16529",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Once Again",
-    "url": "charts/O/Once%20Again.html"
+    "url": "charts/O/Once%20Again.html",
+    "ccli":"1564362",
+    "bpm":"71",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "One Day (so blessed)",
-    "url": "charts/O/One%20Day%20(so%20blessed).html"
+    "url": "charts/O/One%20Day%20(so%20blessed).html",
+    "ccli":"2725646"
   },
   {
     "title": "One Desire",
-    "url": "charts/O/One%20Desire.html"
+    "url": "charts/O/One%20Desire.html",
+    "ccli":"3452743"
   },
   {
     "title": "One Thing Remains",
-    "url": "charts/O/One%20Thing%20Remains.html"
+    "url": "charts/O/One%20Thing%20Remains.html",
+    "ccli":"5508444",
+    "bpm":"78",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "One Voice",
-    "url": "charts/O/One%20Voice.html"
+    "url": "charts/O/One%20Voice.html",
+    "ccli":"12138",
+    "bpm":"63",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "One Way",
-    "url": "charts/O/One%20Way.html"
+    "url": "charts/O/One%20Way.html",
+    "ccli":"4222082",
+    "bpm":"125",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Only a Holy God",
-    "url": "charts/O/Only%20a%20Holy%20God.html"
+    "url": "charts/O/Only%20a%20Holy%20God.html",
+    "ccli":"7073332",
+    "bpm":"50",
+    "timeSignature":"6/8 time"
   },
   {
     "title": "Only By Grace",
-    "url": "charts/O/Only%20By%20Grace.html"
+    "url": "charts/O/Only%20By%20Grace.html",
+    "ccli":"190579",
+    "bpm":"88",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Open Spaces",
-    "url": "charts/O/Open%20Spaces.html"
+    "url": "charts/O/Open%20Spaces.html",
+    "ccli":"7089179",
+    "bpm":"62",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Open the Eyes of my Heart",
-    "url": "charts/O/Open%20the%20Eyes%20of%20my%20Heart.html"
+    "url": "charts/O/Open%20the%20Eyes%20of%20my%20Heart.html",
+    "ccli":"2298355",
+    "bpm":"112",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Our Father (Hillsongs)",
-    "url": "charts/O/Our%20Father%20(Hillsongs).html"
+    "url": "charts/O/Our%20Father%20(Hillsongs).html",
+    "ccli":"7019980",
+    "bpm":"71",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Our Father",
-    "url": "charts/O/Our%20Father.html"
+    "url": "charts/O/Our%20Father.html",
+    "ccli":"6258346",
+    "bpm":"70",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Our God (is Greater)",
-    "url": "charts/O/Our%20God%20(is%20Greater).html"
+    "url": "charts/O/Our%20God%20(is%20Greater).html",
+    "ccli":"5677416",
+    "bpm":"105",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Potter's Hand",
-    "url": "charts/P/Potter's%20Hand.html"
+    "url": "charts/P/Potter's%20Hand.html",
+    "ccli":"2449771",
+    "bpm":"66",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Praise the Lord (Psalm 150)",
-    "url": "charts/P/Praise%20the%20Lord%20(Psalm%20150).html"
+    "url": "charts/P/Praise%20the%20Lord%20(Psalm%20150).html",
+    "ccli":"7161130",
+    "bpm":"77",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Prepare the Way",
-    "url": "charts/P/Prepare%20the%20Way.html"
+    "url": "charts/P/Prepare%20the%20Way.html",
+    "ccli":"2791649",
+    "bpm":"118",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Refiner's Fire",
-    "url": "charts/R/Refiner's%20Fire.html"
+    "url": "charts/R/Refiner's%20Fire.html",
+    "ccli":"426298",
+    "bpm":"72",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Reign King Jesus Reign",
-    "url": "charts/R/Reign%20King%20Jesus%20Reign.html"
+    "url": "charts/R/Reign%20King%20Jesus%20Reign.html",
+    "ccli":"47103"
   },
   {
     "title": "Revelation Song",
-    "url": "charts/R/Revelation%20Song.html"
+    "url": "charts/R/Revelation%20Song.html",
+    "ccli":"4447960",
+    "bpm":"60",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Reward",
@@ -897,55 +1445,82 @@
   },
   {
     "title": "Say to the Lord I Love You",
-    "url": "charts/S/Say%20to%20the%20Lord%20I%20Love%20You.html"
+    "url": "charts/S/Say%20to%20the%20Lord%20I%20Love%20You.html",
+    "ccli":"39324"
   },
   {
     "title": "Set A Fire",
-    "url": "charts/S/Set%20A%20Fire.html"
+    "url": "charts/S/Set%20A%20Fire.html",
+    "ccli":"5911299",
+    "bpm":"60",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Shekinah Glory (We wait for You)",
-    "url": "charts/S/Shekinah%20Glory%20(We%20wait%20for%20You).html"
+    "url": "charts/S/Shekinah%20Glory%20(We%20wait%20for%20You).html",
+    "ccli":"5978074",
+    "bpm":"68",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Shout of the King",
-    "url": "charts/S/Shout%20of%20the%20King.html"
+    "url": "charts/S/Shout%20of%20the%20King.html",
+    "ccli":"3490554"
   },
   {
     "title": "Shout To The Lord",
-    "url": "charts/S/Shout%20To%20The%20Lord.html"
+    "url": "charts/S/Shout%20To%20The%20Lord.html",
+    "ccli":"1406918",
+    "bpm":"76",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Sing (Your Love)",
-    "url": "charts/S/Sing%20(Your%20Love).html"
+    "url": "charts/S/Sing%20(Your%20Love).html",
+    "ccli":"4222075"
   },
   {
     "title": "Sing of Your Great Love",
-    "url": "charts/S/Sing%20of%20Your%20Great%20Love.html"
+    "url": "charts/S/Sing%20of%20Your%20Great%20Love.html",
+    "ccli":"2681807"
   },
   {
     "title": "So You Would Come",
-    "url": "charts/S/So%20You%20Would%20Come.html"
+    "url": "charts/S/So%20You%20Would%20Come.html",
+    "ccli":"2109042",
+    "bpm":"60",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Speak O Lord",
-    "url": "charts/S/Speak%20O%20Lord.html"
+    "url": "charts/S/Speak%20O%20Lord.html",
+    "ccli":"4615235",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Speak to Me (I am Your servant)",
-    "url": "charts/S/Speak%20to%20Me%20(I%20am%20Your%20servant).html"
+    "url": "charts/S/Speak%20to%20Me%20(I%20am%20Your%20servant).html",
+    "ccli":"5110605"
   },
   {
     "title": "Spirit Break Out",
-    "url": "charts/S/Spirit%20Break%20Out.html"
+    "url": "charts/S/Spirit%20Break%20Out.html",
+    "ccli":"6058450",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Spirit, Touch Your Church",
-    "url": "charts/S/Spirit,%20Touch%20Your%20Church.html"
+    "url": "charts/S/Spirit,%20Touch%20Your%20Church.html",
+    "ccli":"451861",
+    "bpm":"54",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Still",
-    "url": "charts/S/Still.html"
+    "url": "charts/S/Still.html",
+    "ccli":"3940963",
+    "bpm":"70",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Sweet Surrender",
@@ -953,19 +1528,29 @@
   },
   {
     "title": "Take My Life and Let It Be",
-    "url": "charts/T/Take%20My%20Life%20and%20Let%20It%20Be.html"
+    "url": "charts/T/Take%20My%20Life%20and%20Let%20It%20Be.html",
+    "ccli":"1390",
+    "bpm":"86",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Tell The World",
-    "url": "charts/T/Tell%20The%20World.html"
+    "url": "charts/T/Tell%20The%20World.html",
+    "ccli":"4451310",
+    "bpm":"140",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Thank You for the Cross (Mighty Cross)",
-    "url": "charts/T/Thank%20You%20for%20the%20Cross%20(Mighty%20Cross).html"
+    "url": "charts/T/Thank%20You%20for%20the%20Cross%20(Mighty%20Cross).html",
+    "ccli":"242056"
   },
   {
     "title": "Thank You Jesus For the Blood",
-    "url": "charts/T/Thank%20You%20Jesus%20For%20the%20Blood.html"
+    "url": "charts/T/Thank%20You%20Jesus%20For%20the%20Blood.html",
+    "ccli":"7172456",
+    "bpm":"61",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Thank You Jesus",
@@ -973,59 +1558,100 @@
   },
   {
     "title": "Thank You Lord for Saving My Soul",
-    "url": "charts/T/Thank%20You%20Lord%20for%20Saving%20My%20Soul.html"
+    "url": "charts/T/Thank%20You%20Lord%20for%20Saving%20My%20Soul.html",
+    "ccli":"16763",
+    "timeSignature":"6/4 time"
   },
   {
     "title": "Thank You Lord",
-    "url": "charts/T/Thank%20You%20Lord.html"
+    "url": "charts/T/Thank%20You%20Lord.html",
+    "ccli":"4220833",
+    "bpm":"90",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "The Servant King",
-    "url": "charts/T/The%20Servant%20King.html"
+    "url": "charts/T/The%20Servant%20King.html",
+    "ccli":"78897",
+    "bpm":"65",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "The Stand",
-    "url": "charts/T/The%20Stand.html"
+    "url": "charts/T/The%20Stand.html",
+    "ccli":"4705248",
+    "bpm":"77",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "There is None Like You",
-    "url": "charts/T/There%20is%20None%20Like%20You.html"
+    "url": "charts/T/There%20is%20None%20Like%20You.html",
+    "ccli":"674545",
+    "bpm":"69",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "This I Believe (The Creed)",
-    "url": "charts/T/This%20I%20Believe%20(The%20Creed).html"
+    "url": "charts/T/This%20I%20Believe%20(The%20Creed).html",
+    "ccli":"7018338",
+    "bpm":"72",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "This Is Amazing Grace",
-    "url": "charts/T/This%20Is%20Amazing%20Grace.html"
+    "url": "charts/T/This%20Is%20Amazing%20Grace.html",
+    "ccli":"6333821",
+    "bpm":"100",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "This is My Desire",
-    "url": "charts/T/This%20is%20My%20Desire.html"
+    "url": "charts/T/This%20is%20My%20Desire.html",
+    "ccli":"1866132",
+    "bpm":"76",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "This is Our God",
-    "url": "charts/T/This%20is%20Our%20God.html"
+    "url": "charts/T/This%20is%20Our%20God.html",
+    "ccli":"5060834",
+    "bpm":"80",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "This is the Day",
-    "url": "charts/T/This%20is%20the%20Day.html"
+    "url": "charts/T/This%20is%20the%20Day.html",
+    "ccli":"943582",
+    "bpm":"132",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "This Kingdom",
-    "url": "charts/T/This%20Kingdom.html"
+    "url": "charts/T/This%20Kingdom.html",
+    "ccli":"1650898",
+    "bpm":"85",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Through It All",
-    "url": "charts/T/Through%20It%20All.html"
+    "url": "charts/T/Through%20It%20All.html",
+    "ccli":"3452774",
+    "bpm":"77",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Till I See You",
-    "url": "charts/T/Till%20I%20See%20You.html"
+    "url": "charts/T/Till%20I%20See%20You.html",
+    "ccli":"4455189",
+    "bpm":"75",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "To Our God",
-    "url": "charts/T/To%20Our%20God.html"
+    "url": "charts/T/To%20Our%20God.html",
+    "ccli":"6227023",
+    "bpm":"74",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "To You (Lord of the Heavens)",
@@ -1033,107 +1659,180 @@
   },
   {
     "title": "Touch of Heaven",
-    "url": "charts/T/Touch%20of%20Heaven.html"
+    "url": "charts/T/Touch%20of%20Heaven.html",
+    "ccli":"7102403",
+    "bpm":"68",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Touching Heaven Changing Earth",
-    "url": "charts/T/Touching%20Heaven%20Changing%20Earth.html"
+    "url": "charts/T/Touching%20Heaven%20Changing%20Earth.html",
+    "ccli":"2317779"
   },
   {
     "title": "Turn Your Eyes (Sovereign Grace)",
-    "url": "charts/T/Turn%20Your%20Eyes%20(Sovereign%20Grace).html"
+    "url": "charts/T/Turn%20Your%20Eyes%20(Sovereign%20Grace).html",
+    "ccli":"7120053",
+    "bpm":"100",
+    "timeSignature":"3/4 time"
   },
   {
     "title": "Turn Your Eyes Upon Jesus",
-    "url": "charts/T/Turn%20Your%20Eyes%20Upon%20Jesus.html"
+    "url": "charts/T/Turn%20Your%20Eyes%20Upon%20Jesus.html",
+    "ccli":"15960",
+    "bpm":"110",
+    "timeSignature":"3/4 time"
   },
   {
     "title": "Unchanging (Raise Up Holy Hands)",
-    "url": "charts/U/Unchanging%20(Raise%20Up%20Holy%20Hands).html"
+    "url": "charts/U/Unchanging%20(Raise%20Up%20Holy%20Hands).html",
+    "ccli":"4016669",
+    "bpm":"106",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Unfailing Love",
-    "url": "charts/U/Unfailing%20Love.html"
+    "url": "charts/U/Unfailing%20Love.html",
+    "ccli":"4403227",
+    "bpm":"68",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Victor's Crown",
-    "url": "charts/V/Victor's%20Crown.html"
+    "url": "charts/V/Victor's%20Crown.html",
+    "ccli":"6454621",
+    "bpm":"75",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Waiting Here for You",
-    "url": "charts/W/Waiting%20Here%20for%20You.html"
+    "url": "charts/W/Waiting%20Here%20for%20You.html",
+    "ccli":"5925663",
+    "bpm":"66",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Way Maker",
-    "url": "charts/W/Way%20Maker.html"
+    "url": "charts/W/Way%20Maker.html",
+    "ccli":"7115744",
+    "bpm":"68",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "We Bow Down",
-    "url": "charts/W/We%20Bow%20Down.html"
+    "url": "charts/W/We%20Bow%20Down.html",
+    "ccli":"3537761",
+    "bpm":"72",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "We Bring a Sacrifice of Praise",
-    "url": "charts/W/We%20Bring%20a%20Sacrifice%20of%20Praise.html"
+    "url": "charts/W/We%20Bring%20a%20Sacrifice%20of%20Praise.html",
+    "ccli":"9990",
+    "bpm":"108",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "We Fall Down",
-    "url": "charts/W/We%20Fall%20Down.html"
+    "url": "charts/W/We%20Fall%20Down.html",
+    "ccli":"2437367",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "We Want to See Jesus Lifted High",
-    "url": "charts/W/We%20Want%20to%20See%20Jesus%20Lifted%20High.html"
+    "url": "charts/W/We%20Want%20to%20See%20Jesus%20Lifted%20High.html",
+    "ccli":"1033408",
+    "bpm":"146",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "What a Beautiful Name",
-    "url": "charts/W/What%20a%20Beautiful%20Name.html"
+    "url": "charts/W/What%20a%20Beautiful%20Name.html",
+    "ccli":"7068424",
+    "bpm":"68",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "What a Friend We Have in Jesus",
-    "url": "charts/W/What%20a%20Friend%20We%20Have%20in%20Jesus.html"
+    "url": "charts/W/What%20a%20Friend%20We%20Have%20in%20Jesus.html",
+    "ccli":"6542519",
+    "bpm":"96",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "What Can I Do",
-    "url": "charts/W/What%20Can%20I%20Do.html"
+    "url": "charts/W/What%20Can%20I%20Do.html",
+    "ccli":"4554279",
+    "bpm":"72",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "When It's All Been Said and Done",
-    "url": "charts/W/When%20It's%20All%20Been%20Said%20and%20Done.html"
+    "url": "charts/W/When%20It's%20All%20Been%20Said%20and%20Done.html",
+    "ccli":"2788353",
+    "bpm":"92",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Who Am I",
-    "url": "charts/W/Who%20Am%20I.html"
+    "url": "charts/W/Who%20Am%20I.html",
+    "ccli":"4196651",
+    "bpm":"66",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Who You Say I Am",
-    "url": "charts/W/Who%20You%20Say%20I%20Am.html"
+    "url": "charts/W/Who%20You%20Say%20I%20Am.html",
+    "ccli":"7102401",
+    "bpm":"58",
+    "timeSignature":"6/8 time"
   },
   {
     "title": "Whole Heart (Hold Me Now)",
-    "url": "charts/W/Whole%20Heart%20(Hold%20Me%20Now).html"
+    "url": "charts/W/Whole%20Heart%20(Hold%20Me%20Now).html",
+    "ccli":"7122452",
+    "bpm":"53",
+    "timeSignature":"6/8 time"
   },
   {
     "title": "Whom Shall I Fear",
-    "url": "charts/W/Whom%20Shall%20I%20Fear.html"
+    "url": "charts/W/Whom%20Shall%20I%20Fear.html",
+    "ccli":"6440288",
+    "bpm":"75",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "With All I Am",
-    "url": "charts/W/With%20All%20I%20Am.html"
+    "url": "charts/W/With%20All%20I%20Am.html",
+    "ccli":"4257734"
   },
   {
     "title": "Worthy is the Lamb",
-    "url": "charts/W/Worthy%20is%20the%20Lamb.html"
+    "url": "charts/W/Worthy%20is%20the%20Lamb.html",
+    "ccli":"3217555",
+    "bpm":"76",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Worthy Of It All",
-    "url": "charts/W/Worthy%20Of%20It%20All.html"
+    "url": "charts/W/Worthy%20Of%20It%20All.html",
+    "ccli":"6280644",
+    "bpm":"69",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Yet Not I But Through Christ in Me",
-    "url": "charts/Y/Yet%20Not%20I%20But%20Through%20Christ%20in%20Me.html"
+    "url": "charts/Y/Yet%20Not%20I%20But%20Through%20Christ%20in%20Me.html",
+    "ccli":"7121852",
+    "bpm":"75",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "You Alone Can Rescue",
-    "url": "charts/Y/You%20Alone%20Can%20Rescue.html"
+    "url": "charts/Y/You%20Alone%20Can%20Rescue.html",
+    "ccli":"5376377",
+    "bpm":"69",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "You are + You are Lord",
@@ -1141,94 +1840,151 @@
   },
   {
     "title": "You Are Beautiful Beyond Description",
-    "url": "charts/Y/You%20Are%20Beautiful%20Beyond%20Description.html"
+    "url": "charts/Y/You%20Are%20Beautiful%20Beyond%20Description.html",
+    "ccli":"23914",
+    "bpm":"76",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "You Are God Alone",
-    "url": "charts/Y/You%20Are%20God%20Alone.html"
+    "url": "charts/Y/You%20Are%20God%20Alone.html",
+    "ccli":"4243463",
+    "bpm":"70",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "You Are Good (I sing because You are good)",
-    "url": "charts/Y/You%20Are%20Good%20(I%20sing%20because%20You%20are%20good).html"
+    "url": "charts/Y/You%20Are%20Good%20(I%20sing%20because%20You%20are%20good).html",
+    "ccli":"5191806",
+    "bpm":"144",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "You Are Good (Your Kindness Leads Me To Repentance)",
-    "url": "charts/Y/You%20Are%20Good%20(Your%20Kindness%20Leads%20Me%20To%20Repentance).html"
+    "url": "charts/Y/You%20Are%20Good%20(Your%20Kindness%20Leads%20Me%20To%20Repentance).html",
+    "ccli":"5075001",
+    "bpm":"68",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "You Are Here (in our midst)",
-    "url": "charts/Y/You%20Are%20Here%20(in%20our%20midst).html"
+    "url": "charts/Y/You%20Are%20Here%20(in%20our%20midst).html",
+    "ccli":"1896332"
   },
   {
     "title": "You are Holy (Prince of Peace)",
-    "url": "charts/Y/You%20are%20Holy%20(Prince%20of%20Peace).html"
+    "url": "charts/Y/You%20are%20Holy%20(Prince%20of%20Peace).html",
+    "ccli":"2332149",
+    "bpm":"108",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "You Are Holy",
-    "url": "charts/Y/You%20Are%20Holy.html"
+    "url": "charts/Y/You%20Are%20Holy.html",
+    "ccli":"2336114",
+    "bpm":"67",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "You Are My King (Amazing Love)",
-    "url": "charts/Y/You%20Are%20My%20King%20(Amazing%20Love).html"
+    "url": "charts/Y/You%20Are%20My%20King%20(Amazing%20Love).html",
+    "ccli":"2456623",
+    "bpm":"70",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "You are My World",
-    "url": "charts/Y/You%20are%20My%20World.html"
+    "url": "charts/Y/You%20are%20My%20World.html",
+    "ccli":"3258174"
   },
   {
     "title": "You are so Faithful",
-    "url": "charts/Y/You%20are%20so%20Faithful.html"
+    "url": "charts/Y/You%20are%20so%20Faithful.html",
+    "ccli":"121809"
   },
   {
     "title": "You Are the God that Healeth Me",
-    "url": "charts/Y/You%20Are%20the%20God%20that%20Healeth%20Me.html"
+    "url": "charts/Y/You%20Are%20the%20God%20that%20Healeth%20Me.html",
+    "ccli":"17250",
+    "bpm":"69",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "You Crown the Year",
-    "url": "charts/Y/You%20Crown%20the%20Year.html"
+    "url": "charts/Y/You%20Crown%20the%20Year.html",
+    "ccli":"6514114"
   },
   {
     "title": "You Laid Aside Your Majesty",
-    "url": "charts/Y/You%20Laid%20Aside%20Your%20Majesty.html"
+    "url": "charts/Y/You%20Laid%20Aside%20Your%20Majesty.html",
+    "ccli":"78275",
+    "bpm":"118",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "You Make Me Brave",
-    "url": "charts/Y/You%20Make%20Me%20Brave.html"
+    "url": "charts/Y/You%20Make%20Me%20Brave.html",
+    "ccli":"7003306",
+    "bpm":"138",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "You Won't Relent",
-    "url": "charts/Y/You%20Won't%20Relent.html"
+    "url": "charts/Y/You%20Won't%20Relent.html",
+    "ccli":"5370823",
+    "bpm":"80",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Your Grace is Enough",
-    "url": "charts/Y/Your%20Grace%20is%20Enough.html"
+    "url": "charts/Y/Your%20Grace%20is%20Enough.html",
+    "ccli":"4477026",
+    "bpm":"116",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Your Great Name",
-    "url": "charts/Y/Your%20Great%20Name.html"
+    "url": "charts/Y/Your%20Great%20Name.html",
+    "ccli":"5393329",
+    "bpm":"75",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Your Love is Amazing",
-    "url": "charts/Y/Your%20Love%20is%20Amazing.html"
+    "url": "charts/Y/Your%20Love%20is%20Amazing.html",
+    "ccli":"3091812",
+    "bpm":"96",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Your Love Never Fails",
-    "url": "charts/Y/Your%20Love%20Never%20Fails.html"
+    "url": "charts/Y/Your%20Love%20Never%20Fails.html",
+    "ccli":"5337172",
+    "bpm":"116",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Your Name High",
-    "url": "charts/Y/Your%20Name%20High.html"
+    "url": "charts/Y/Your%20Name%20High.html",
+    "ccli":"5060841"
   },
   {
     "title": "Your Name",
-    "url": "charts/Y/Your%20Name.html"
+    "url": "charts/Y/Your%20Name.html",
+    "ccli":"4611679",
+    "bpm":"80",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Your Presence is Heaven to Me",
-    "url": "charts/Y/Your%20Presence%20is%20Heaven%20to%20Me.html"
+    "url": "charts/Y/Your%20Presence%20is%20Heaven%20to%20Me.html",
+    "ccli":"6214751",
+    "bpm":"66",
+    "timeSignature":"4/4 time"
   },
   {
     "title": "Your Unfailing Love",
-    "url": "charts/Y/Your%20Unfailing%20Love.html"
+    "url": "charts/Y/Your%20Unfailing%20Love.html",
+    "ccli":"2543440"
   }
 ]

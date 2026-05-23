@@ -273,6 +273,7 @@ function renderSongList(songs) {
             <a href="#/song/${encodeURIComponent(song.title)}" class="song-item" data-url="${song.url}">
                 ${song.title}
             </a>
+            ${song.ccli ? '<span class="ccli-badge">CCLI</span>' : ''}
         </div>
     `).join('');
 }
@@ -353,42 +354,60 @@ async function renderSongDetail(hash) {
 }
 
 function renderSongContent(song) {
-    // Calculate semitones difference
-    let semitones = song.currentKeyIndex - song.originalKeyIndex;
+    const semitones = song.currentKeyIndex - song.originalKeyIndex;
+    const KEY_DISPLAY = ['C', 'Db', 'D', 'Eb', 'E', 'F', 'Gb', 'G', 'Ab', 'A', 'Bb', 'B'];
+    const escapedTitle = song.title.replace(/'/g, "\\'");
 
     let transposedContent = transposeText(song.originalContent, semitones);
-
-    // Style Section Headers
-    // Matches [Intro], [Verse 1], etc.
     const headerRegex = /\[((?:Intro|Verse|Pre-Chorus|Chorus|Bridge|Interlude|Tag|Ending|Coda|Outro).*?)\]/gi;
     transposedContent = transposedContent.replace(headerRegex, '<span class="section-header">[$1]</span>');
 
-    // Generate Key Options
-    const KEY_DISPLAY = ['C', 'Db', 'D', 'Eb', 'E', 'F', 'Gb', 'G', 'Ab', 'A', 'Bb', 'B'];
-
-    const options = KEY_DISPLAY.map((key, index) => {
-        const selected = index === song.currentKeyIndex ? 'selected' : '';
-        return `<option value="${index}" ${selected}>${key}</option>`;
+    // Key pills — all 12 chromatic keys
+    const keyPills = KEY_DISPLAY.map((key, index) => {
+        const isActive = index === song.currentKeyIndex;
+        return `<button class="key-pill${isActive ? ' active' : ''}" onclick="changeKey('${escapedTitle}', ${index})" aria-label="Key ${key}">${key}</button>`;
     }).join('');
 
+    // Metadata chips — only rendered when optional fields exist in songs.json
+    const chips = [];
+    if (song.ccli)          chips.push(`<span class="song-meta-chip">CCLI: ${song.ccli}</span>`);
+    if (song.bpm)           chips.push(`<span class="song-meta-chip">BPM: ${song.bpm}</span>`);
+    if (song.timeSignature) chips.push(`<span class="song-meta-chip">${song.timeSignature}</span>`);
+    const metaChips = chips.length ? `<div class="song-meta-chips">${chips.join('')}</div>` : '';
+
+    const artistLine = song.artist ? `<p class="song-artist">${song.artist}</p>` : '';
+
+    const inSetlist = selectedSongs.some(s => s.title === song.title);
+    const addBtnLabel = inSetlist ? 'Update Key' : 'Add to Setlist';
+
     document.querySelector('.song-detail').innerHTML = `
-        <h1>${song.title}</h1>
-        <div class="transposition-controls">
-            <label for="key-select" style="font-weight: 600; margin-right: 0.5rem;">Key:</label>
-            <select id="key-select" onchange="changeKey('${song.title.replace(/'/g, "\\'")}', this.value)" class="key-select">
-                ${options}
-            </select>
+        <div class="song-detail-nav">
+            <button onclick="window.history.back()" class="back-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                Back to Library
+            </button>
+            <button onclick="addToSetlist('${escapedTitle}', ${song.currentKeyIndex})" class="btn btn-primary btn-add-setlist">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                ${addBtnLabel}
+            </button>
         </div>
+
+        <div class="song-detail-header">
+            <h1>${song.title}</h1>
+            ${artistLine}
+            ${metaChips}
+        </div>
+
+        <div class="song-detail-controls">
+            <div class="key-selector">
+                <span class="section-header">Key:</span>
+                <div class="key-pills">${keyPills}</div>
+            </div>
+        </div>
+
         <div class="song-content">
             <pre>${transposedContent}</pre>
-
-            <p style="margin-top: 1rem; font-size: 0.8rem; color: var(--text-muted); text-align: center;">
-                ${song.title} is the copyrighted property of its owner(s).
-            </p>
-        </div>
-        <div class="action-buttons" style="margin-top: 1rem; display: flex; gap: 1rem;">
-            <button onclick="window.history.back()" class="btn btn-secondary">Back</button>
-            <button onclick="addToSetlist('${song.title.replace(/'/g, "\\'")}', ${song.currentKeyIndex})" class="btn btn-primary">Add to Setlist</button>
+            <p class="copyright-notice">${song.title} is the copyrighted property of its owner(s).</p>
         </div>
     `;
 }

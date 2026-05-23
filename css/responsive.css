@@ -1,21 +1,13 @@
-/* Mobile Navigation & Responsiveness */
+/* ── Mobile Navigation & Responsiveness ── */
 
 .menu-toggle {
     display: none;
-    padding: var(--spacing-sm);
-    cursor: pointer;
-    color: var(--text-muted);
-    transition: color var(--transition-fast);
 }
 
-.menu-toggle:hover {
-    color: var(--primary-color);
-}
-
-/* ── Mobile ── */
+/* ── Tablet / Mobile ── */
 @media (max-width: 768px) {
     .menu-toggle {
-        display: block;
+        display: flex;
     }
 
     .nav-links {
@@ -25,19 +17,38 @@
         left: 0;
         width: 100%;
         flex-direction: column;
-        background-color: var(--surface-color);
+        background-color: var(--color-surface-container-lowest);
         border-bottom: 1px solid var(--border-color);
-        padding: var(--spacing-md) var(--spacing-lg);
-        gap: var(--spacing-md);
+        padding: 0 var(--gutter);
+        gap: 0;
         box-shadow: var(--shadow-md);
+    }
+
+    [data-theme="dark"] .nav-links {
+        background-color: var(--color-surface-container);
     }
 
     .nav-links.active {
         display: flex;
     }
 
+    .nav-links li {
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .nav-links li:last-child {
+        border-bottom: none;
+    }
+
+    .nav-links a {
+        display: flex;
+        align-items: center;
+        height: 52px;
+        padding: 0;
+    }
+
     .navbar {
-        padding: var(--spacing-sm) var(--spacing-md);
+        padding: 0 var(--spacing-md);
     }
 
     #main-content {
@@ -49,7 +60,7 @@
     }
 
     .carousel-container {
-        height: 260px;
+        height: 280px;
     }
 
     .carousel-text blockquote {
@@ -61,7 +72,7 @@
     }
 
     .hero h1 {
-        font-size: 2.75rem;
+        font-size: 2.25rem;
     }
 
     .hero p {
@@ -69,7 +80,7 @@
     }
 
     .song-detail h1 {
-        font-size: 1.875rem;
+        font-size: 1.625rem;
     }
 
     pre {
@@ -100,17 +111,21 @@
     }
 }
 
-/* ── Small mobile ── */
+/* ── Small Mobile ── */
 @media (max-width: 480px) {
     .hero h1 {
-        font-size: 2.25rem;
+        font-size: 1.875rem;
     }
 
     .logo {
-        font-size: 1.25rem;
+        font-size: 0.875rem;
     }
 
     .carousel-text blockquote {
         font-size: 1.125rem;
+    }
+
+    .song-item {
+        padding: 1rem 0.75rem;
     }
 }
