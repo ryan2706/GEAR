@@ -89,13 +89,12 @@
         font-size: 0.875rem;
     }
 
-    .transposition-controls {
-        flex-wrap: wrap;
-        width: 100%;
+    .chart-v2 {
+        font-size: 0.875rem;
     }
 
-    .verse-card blockquote {
-        font-size: 1.125rem;
+    .chord-line {
+        font-size: 0.8125rem;
     }
 
     .feature-card {

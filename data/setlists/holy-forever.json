@@ -1,0 +1,20 @@
+[
+  {
+    "sectionOverrides": {
+      "Verse 1": "zh",
+      "Pre-Chorus": "zh",
+      "Chorus 1": "zh",
+      "Verse 2": "en",
+      "Chorus 2": "en"
+    },
+    "repeats": [
+      { "section": "Pre-Chorus", "mode": "en", "after": "Pre-Chorus" },
+      { "section": "Pre-Chorus", "mode": "zh", "after": "Pre-Chorus" },
+      { "section": "Chorus 1", "mode": "en", "after": "Chorus 1" },
+      { "section": "Chorus 1", "mode": "zh", "after": "Chorus 1" },
+      { "section": "Chorus 1", "mode": "en", "note": "Soft", "after": "Chorus 1" },
+      { "section": "Chorus 2", "mode": "zh", "after": "Chorus 2" },
+      { "section": "Chorus 2", "mode": "en", "note": "Soft", "after": "Chorus 2" }
+    ]
+  }
+]

@@ -110,6 +110,13 @@ Use `label-caps` for metadata labels like "Key", "Tempo", "Difficulty". Maintain
 | `body-md` | Manrope | 16px | 400 | 1.6 | — |
 | `label-caps` | Manrope | 12px | 700 | 1.0 | 0.1em |
 
+### Monospace (chord charts)
+
+| Token | Font stack | Usage |
+|---|---|---|
+| `--font-mono` | `'Courier New', Courier, monospace` | v1 chord charts (`<pre>`) |
+| `--font-mono-cjk` | `'Noto Sans SC', 'Noto Sans TC', 'PingFang SC', 'Microsoft YaHei', sans-serif` | Mandarin lyric lines in v2 bilingual charts (`.lyric-line[lang^="zh"]`) — no CJK monospace metric is assumed, so this is sans-serif rather than a true fixed-width face |
+
 ---
 
 ## Spacing

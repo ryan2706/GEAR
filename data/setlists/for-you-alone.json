@@ -1,0 +1,13 @@
+[
+  {
+    "sectionOverrides": {
+      "Verse": "en",
+      "Chorus": "en"
+    },
+    "repeats": [
+      { "section": "Verse", "mode": "zh", "after": "Verse" },
+      { "section": "Chorus", "mode": "zh", "after": "Chorus" },
+      { "section": "Chorus", "mode": "en", "note": "Guitar & Keys hold A at the end", "after": "Chorus" }
+    ]
+  }
+]

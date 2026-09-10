@@ -76,6 +76,7 @@
     --font-heading: 'Noto Serif', Georgia, serif;
     --font-label:   'Manrope', system-ui, sans-serif;
     --font-mono:    'Courier New', Courier, monospace;
+    --font-mono-cjk: 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK TC', 'Noto Sans Mono', 'PingFang SC', 'Microsoft YaHei', monospace;
 
     /* ── Spacing (Stitch tokens) ── */
     --spacing-unit: 0.5rem;   /* 8px */
@@ -84,6 +85,13 @@
     --spacing-lg:   2.5rem;   /* stack-lg  40px */
     --spacing-xl:   5rem;     /* section-gap 80px */
     --gutter:       2rem;     /* 32px */
+    /* 2× spacing-md — the gap between one chart section and the next (v2
+       charts only). DESIGN.md's own section-gap (--spacing-xl, 80px) is
+       sized for page-level layout between whole screens, not for an inline
+       chart's own internal rhythm — reusing it here would dwarf a chord
+       chart's other spacing rather than just being the largest of its three
+       tiers, so this is its own smaller, chart-scoped token instead. */
+    --chart-section-gap: 2rem; /* 32px */
     --margin-page:  4rem;     /* 64px */
     --container-max: 1120px;
 
@@ -134,6 +142,7 @@
     --color-outline-variant:          #45474b;
     --color-primary-container:        #c0c7d4;
     --color-on-primary:               #1a1c1b;
+    --color-secondary:                #bbc8d8;
 
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
     --shadow-md: 0 4px 24px rgba(0, 0, 0, 0.25), 0 1px 4px rgba(0, 0, 0, 0.15);
@@ -142,6 +151,26 @@
     --tooltip-bg:     rgba(47, 49, 48, 0.98);
     --tooltip-border: #45474b;
     --tooltip-text:   #f1f1ef;
+}
+
+/* ── Self-hosted CJK monospace webfonts ──
+   Not on Google Fonts (fonts.googleapis.com/css2 404s on this family) — these
+   are a repo-content-driven subset built by tools/subset-cjk-font.mjs, one
+   file per script so Simplified and Traditional charts each get correct
+   glyph shapes. Names match --font-mono-cjk's fallback stack below exactly,
+   so no other rule needs to change for these to take effect. */
+@font-face {
+    font-family: 'Noto Sans Mono CJK SC';
+    src: url('../fonts/NotoSansMonoCJKsc-subset.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans Mono CJK TC';
+    src: url('../fonts/NotoSansMonoCJKtc-subset.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
 }
 
 /* ── Reset ── */
@@ -374,6 +403,10 @@ button {
     margin: 0 auto;
 }
 
+.lang-filter-chips {
+    margin-bottom: var(--spacing-md);
+}
+
 .search-input {
     width: 100%;
     padding: 0.75rem 0;
@@ -436,6 +469,18 @@ button {
 
 .song-item-container:hover .song-item {
     color: var(--primary-color);
+}
+
+.song-item-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+}
+
+.song-item-zh {
+    font-size: 0.8125rem;
+    font-weight: 400;
+    color: var(--text-muted);
 }
 
 .ccli-badge {
@@ -544,6 +589,9 @@ button {
 
 /* Key selector row */
 .song-detail-controls {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
     padding: var(--spacing-md) 0;
     border-bottom: 1px solid var(--border-color);
     margin-bottom: var(--spacing-md);
@@ -580,7 +628,7 @@ button {
     flex-shrink: 0;
 }
 
-.key-pill:hover:not(.active) {
+.key-pill:hover:not(.active):not(:disabled) {
     border-color: var(--primary-color);
     color: var(--primary-color);
 }
@@ -589,6 +637,20 @@ button {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
     color: #ffffff;
+}
+
+.key-pill:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
+/* Circle-horizontal variant — same colors/hover/active/disabled states as
+   .key-pill, but sized for a word or two instead of a fixed 1-glyph circle.
+   Height stays equal to .key-pill's so it lines up in the same row. */
+.key-pill-wide {
+    width: auto;
+    padding: 0 1rem;
+    white-space: nowrap;
 }
 
 /* Copyright line inside song content */
@@ -637,18 +699,6 @@ pre {
 }
 
 /* ── Transposition Controls ── */
-.transposition-controls {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: var(--spacing-md);
-    background-color: var(--color-surface-container-low);
-    padding: 0.5rem 1rem;
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius);
-    width: fit-content;
-}
-
 .key-select {
     background-color: var(--surface-color);
     color: var(--text-color);
@@ -664,16 +714,6 @@ pre {
 .key-select:focus {
     outline: none;
     border-color: var(--primary-color);
-}
-
-.key-display {
-    font-family: var(--font-heading);
-    font-weight: 700;
-    font-size: 1.375rem;
-    min-width: 2rem;
-    text-align: center;
-    color: var(--primary-color);
-    letter-spacing: -0.01em;
 }
 
 /* ── Chord Annotations ── */
@@ -699,6 +739,157 @@ pre {
     color: var(--text-muted);
 }
 
+/* ── Bilingual Chart (v2) ──
+   Unlike v1's <pre>, chord/lyric alignment here doesn't depend on monospace
+   character columns — each .unit stacks its own .chord above its .syl.
+
+   Three deliberately distinct vertical rhythms, tightest to loosest, so a
+   section boundary reads as clearly as the blank line v1 gets for free from
+   its source text — before this, a section-to-section gap and an
+   ordinary between-line-group gap both collapsed to the same 16px, so nothing
+   on screen told the two apart:
+     1. .lyric-line + .lyric-line   (--spacing-sm,          8px) — an en/zh
+        pair inside one line group, close enough to read as one line.
+     2. .line-group                 (--spacing-md,         16px) — between
+        line groups within a section.
+     3. .chart-section .section-header (--chart-section-gap, 32px) — between
+        sections; exactly 2× tier 2, the "roughly double" v1's blank line
+        achieves.
+   The gap lives entirely on the *next* section's header (margin-top), not
+   split across the previous .chart-section's margin-bottom and the header's
+   own margin — one source of truth instead of two values that have to be
+   read together to know the resulting gap. */
+.chart-v2 {
+    font-family: var(--font-sans);
+    font-size: 0.9375rem;
+    margin-bottom: var(--spacing-md);
+}
+
+/* A header attaches to the section *below* it (more space above than
+   below) — that asymmetry, not extra font weight, is what makes it read as
+   a divider rather than another line of text; BILINGUAL-SPEC.md's Section
+   Headers style (Manrope 12px/700/uppercase) already matches v1's
+   [VERSE 1] exactly, so the gap was the only thing not pulling its weight. */
+.chart-section .section-header {
+    display: block;
+    margin: var(--chart-section-gap) 0 var(--spacing-sm);
+}
+
+.chart-section:first-child .section-header {
+    margin-top: 0;
+}
+
+.chord-line {
+    font-family: var(--font-mono);
+    white-space: pre-wrap;
+    line-height: 2;
+    margin-bottom: var(--spacing-sm);
+}
+
+.line-group {
+    margin-bottom: var(--spacing-md);
+}
+
+.lyric-line {
+    line-height: 1.4;
+}
+
+/* Second .lyric-line in a group (dual-language pairing, or the pinyin
+   fallback line) sits closer to its partner than .line-group's own
+   margin-bottom, so the pair reads as one unit rather than two lines. */
+.lyric-line + .lyric-line {
+    margin-top: var(--spacing-sm);
+}
+
+.lyric-line[lang^="zh"] {
+    font-family: var(--font-mono-cjk);
+}
+
+/* Inline-block + vertical-align does the chord/syllable stacking and the
+   line wrap — no monospace grid, no white-space: pre reliance, reflows at
+   any width the way ordinary inline text does. */
+.unit {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+/* A melisma (BILINGUAL-SPEC.md §5.2's [F][Gm][F]Glo) is a .chord-cluster of
+   more than one .chord child, laid out horizontally via flex; a lone chord
+   is just a one-item cluster, so this is the only shape .unit ever needs —
+   no separate single-chord case. flex governs the *children's* layout
+   regardless of .chord's own `display` below, so that rule doesn't need to
+   change for clustering to work. */
+.chord-cluster {
+    display: flex;
+    gap: 0.15em;
+}
+
+.unit .chord {
+    display: block;
+    font-weight: 600;
+    font-size: 0.8125em;
+    color: var(--color-secondary);
+    border-bottom: none;
+    min-height: 1.2em;
+}
+
+/* renderChordCluster()'s empty-cluster placeholder (a unit with no chord at
+   all — every unit in a {chords: <section>}-reused verse, BILINGUAL-SPEC.md
+   §5.4, or an unchorded word within an otherwise-chorded line) — collapsed
+   out of layout entirely rather than just zeroing min-height, so it reserves
+   no chord-row space above its syllable. .unit's own vertical-align:bottom
+   keeps every syllable on one baseline regardless of which neighboring units
+   still have a real chord row above them, so this doesn't jag a mixed line —
+   see js/chart-render.js's renderChordCluster(). A whole line group with no
+   chords anywhere (v1's equivalent: no chord row typed at all) ends up exactly
+   as tight as v1's chordless verses, instead of reserving a chord row nothing
+   ever fills. */
+.unit .chord[aria-hidden="true"] {
+    display: none;
+}
+
+.unit .syl {
+    display: block;
+    white-space: pre;
+}
+
+/* Pinyin accessibility layer (BILINGUAL-SPEC.md §5.6) — <ruby> annotations
+   sit inside .syl, above the Han characters they read, below the .chord
+   block already stacked above .syl in .unit's normal flow. */
+.unit .syl ruby {
+    ruby-position: over;
+}
+
+.unit .syl rt {
+    font-size: 0.55em;
+    font-weight: 400;
+    font-family: var(--font-sans);
+    color: var(--text-muted);
+}
+
+/* Fallback for browsers without <ruby> support: a plain line of pinyin
+   stacked above the zh line it reads, instead of inline annotations. */
+.lyric-line-pinyin {
+    font-family: var(--font-sans);
+    font-size: 0.8125rem;
+    color: var(--text-muted);
+    line-height: 1.3;
+    margin-bottom: 2px;
+}
+
+/* Its own 2px margin-bottom already sets the gap to the zh line beneath —
+   don't also add the general .lyric-line + .lyric-line spacing on top. */
+.lyric-line-pinyin + .lyric-line {
+    margin-top: 0;
+}
+
+.chart-note {
+    font-style: italic;
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    margin: var(--spacing-sm) 0;
+}
+
 /* ── Generate Page — Selected List ── */
 .selected-list {
     list-style: none;
@@ -715,11 +906,12 @@ pre {
 }
 
 .selected-list li {
-    padding: 0 1rem;
+    padding: 0.75rem 1rem;
     min-height: 56px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
     border-bottom: 1px solid var(--border-color);
     font-family: var(--font-sans);
     font-size: 1rem;
@@ -728,6 +920,69 @@ pre {
 
 .selected-list li:last-child {
     border-bottom: none;
+}
+
+.setlist-row-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.setlist-plan-label {
+    width: 6rem;
+    padding: 0.3rem 0.5rem;
+    font-family: var(--font-sans);
+    font-size: 0.8125rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    background-color: var(--surface-color);
+    color: var(--text-color);
+}
+
+.setlist-plan-label:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.setlist-lang-mode {
+    flex-wrap: wrap;
+}
+
+.setlist-section-overrides {
+    font-size: 0.8125rem;
+    color: var(--text-muted);
+}
+
+.setlist-section-overrides summary {
+    cursor: pointer;
+    font-family: var(--font-label);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.section-override-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0.375rem 0;
+    border-top: 1px solid var(--border-color);
+    margin-top: 0.375rem;
+}
+
+.section-override-row select {
+    font-family: var(--font-sans);
+    font-size: 0.8125rem;
+    padding: 0.2rem 0.4rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    background-color: var(--surface-color);
+    color: var(--text-color);
 }
 
 .remove-btn {
@@ -953,70 +1208,6 @@ pre {
     flex-grow: 1;
     font-size: 0.9375rem;
     line-height: 1.65;
-}
-
-/* ── Verse Cards ── */
-.verses-section {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.verses-container {
-    display: grid;
-    gap: var(--spacing-sm);
-}
-
-.verse-card {
-    background-color: var(--surface-color);
-    border: 1px solid var(--border-color);
-    border-left: 2px solid var(--primary-color);
-    border-radius: 0 var(--radius-md) var(--radius-md) 0;
-    padding: var(--spacing-md) 1.75rem;
-    box-shadow: var(--shadow-sm);
-}
-
-[data-theme="dark"] .verse-card {
-    background-color: var(--color-surface-container);
-}
-
-.verse-card blockquote {
-    font-family: var(--font-heading);
-    font-style: italic;
-    font-size: 1.25rem;
-    font-weight: 400;
-    line-height: 1.55;
-    margin-bottom: 0.625rem;
-    color: var(--text-color);
-}
-
-.verse-card blockquote::before {
-    content: '\201C';
-    font-size: 2rem;
-    line-height: 0;
-    vertical-align: -0.35em;
-    color: var(--color-outline);
-    margin-right: 0.1em;
-}
-
-.verse-card blockquote::after {
-    content: '\201D';
-    font-size: 2rem;
-    line-height: 0;
-    vertical-align: -0.35em;
-    color: var(--color-outline);
-    margin-left: 0.1em;
-}
-
-.verse-card cite {
-    display: block;
-    font-family: var(--font-label);
-    font-weight: 700;
-    font-size: 0.75rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--text-muted);
-    font-style: normal;
-    text-align: right;
 }
 
 /* ── Carousel ── */

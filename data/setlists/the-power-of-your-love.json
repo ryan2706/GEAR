@@ -1,0 +1,13 @@
+[
+  {
+    "sectionOverrides": {
+      "Verse 1": "zh",
+      "Chorus": "zh",
+      "Verse 2": "en"
+    },
+    "repeats": [
+      { "section": "Chorus", "mode": "en", "after": "Chorus" },
+      { "section": "Chorus", "mode": "zh", "after": "Chorus" }
+    ]
+  }
+]

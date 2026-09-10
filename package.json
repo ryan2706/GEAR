@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "type": "module",
+  "description": "GEAR is a static, dependency-free site — nothing here is loaded by index.html. This package.json exists solely for one-off Node build/migration tools under tools/.",
+  "scripts": {
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "@xmldom/xmldom": "^0.9.6",
+    "jszip": "^3.10.1",
+    "opencc-js": "^1.0.5",
+    "pinyin-pro": "^3.26.0",
+    "subset-font": "^2.5.0"
+  }
+}
