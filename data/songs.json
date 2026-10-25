@@ -372,8 +372,30 @@
     "timeSignature": "6/8 time"
   },
   {
+    "title": "Come Fill Me Lord",
+    "titleZh": "求主充满我",
+    "titleZhAlt": "求主充滿我",
+    "pinyin": "qiu zhu chong man wo",
+    "pinyinInitials": "qzcmw",
+    "url": "charts/C/come-fill-me-lord.html",
+    "format": "bilingual",
+    "langs": [
+      "en",
+      "zh-Hans"
+    ]
+  },
+  {
     "title": "Come Holy Spirit (City Harvest Church)",
-    "url": "charts/C/come-holy-spirit-city-harvest-church.html"
+    "titleZh": "圣灵请祢来充满我心",
+    "titleZhAlt": "聖靈請祢來充滿我心",
+    "pinyin": "sheng ling qing ni lai chong man wo xin",
+    "pinyinInitials": "slqnlcmwx",
+    "url": "charts/C/come-holy-spirit-city-harvest-church.html",
+    "format": "bilingual",
+    "langs": [
+      "en",
+      "zh-Hans"
+    ]
   },
   {
     "title": "Come Thou Fount (I Will Sing)",
@@ -811,7 +833,16 @@
   },
   {
     "title": "Holy Spirit (You are welcome here)",
+    "titleZh": "圣灵(我们欢迎祢)",
+    "titleZhAlt": "聖靈(我們歡迎禰)",
+    "pinyin": "sheng ling ( wo men huan ying ni )",
+    "pinyinInitials": "sl(wmhyn)",
     "url": "charts/H/holy-spirit-you-are-welcome-here.html",
+    "format": "bilingual",
+    "langs": [
+      "en",
+      "zh-Hans"
+    ],
     "ccli": "6087919",
     "bpm": "72",
     "timeSignature": "4/4 time"
@@ -1173,8 +1204,8 @@
   },
   {
     "title": "Lord I Lift Your Name on High",
-    "titleZh": "主我高举你的名",
-    "titleZhAlt": "主我高舉你的名",
+    "titleZh": "主我高举祢的名",
+    "titleZhAlt": "主我高舉祢的名",
     "pinyin": "zhu wo gao ju ni de ming",
     "pinyinInitials": "zwgjndm",
     "url": "charts/L/lord-i-lift-your-name-on-high.html",
@@ -1601,6 +1632,19 @@
     "timeSignature": "4/4 time"
   },
   {
+    "title": "The Cross",
+    "titleZh": "十字架",
+    "titleZhAlt": "十字架",
+    "pinyin": "shi zi jia",
+    "pinyinInitials": "szj",
+    "url": "charts/T/the-cross.html",
+    "format": "bilingual",
+    "langs": [
+      "en",
+      "zh-Hans"
+    ]
+  },
+  {
     "title": "The Servant King",
     "url": "charts/T/the-servant-king.html",
     "ccli": "78897",
@@ -1748,7 +1792,16 @@
   },
   {
     "title": "Way Maker",
+    "titleZh": "开路者",
+    "titleZhAlt": "開路者",
+    "pinyin": "kai lu zhe",
+    "pinyinInitials": "klz",
     "url": "charts/W/way-maker.html",
+    "format": "bilingual",
+    "langs": [
+      "en",
+      "zh-Hans"
+    ],
     "ccli": "7115744",
     "bpm": "68",
     "timeSignature": "4/4 time"
@@ -2078,8 +2131,8 @@
   },
   {
     "title": "The Power of Your Love",
-    "titleZh": "你爱的大能",
-    "titleZhAlt": "你愛的大能",
+    "titleZh": "祢爱的大能",
+    "titleZhAlt": "祢愛的大能",
     "pinyin": "ni ai de da neng",
     "pinyinInitials": "naddn",
     "url": "charts/T/the-power-of-your-love.html",
