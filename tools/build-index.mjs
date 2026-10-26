@@ -5,8 +5,10 @@
 // already exists in the source:
 //
 //  1. Rewrites data/songs.json with three generated fields for every record
-//     that has titleZh: titleZhAlt (opposite script), pinyin, and
-//     pinyinInitials. Per BILINGUAL-SPEC.md §7/§9.
+//     that has titleZh — or, failing that, a title containing Han characters
+//     (§7's Chinese-titled songs): titleZhAlt (opposite script), pinyin, and
+//     pinyinInitials, with punctuation stripped from the last two. Per
+//     BILINGUAL-SPEC.md §7/§9.
 //  2. Writes a py: line beneath every zh-* lyric line in every v2
 //     (data-format="bilingual") chart under charts/ — the generated-pinyin
 //     reading-aid layer BILINGUAL-SPEC.md §5.6 defines, so team members who
@@ -27,7 +29,8 @@
 // enforcement mechanism for the rule: a hand-edit to any of them is
 // silently clobbered the next time this script runs. If a generated value
 // looks wrong:
-//   - Wrong titleZhAlt/pinyin/pinyinInitials -> fix titleZh, re-run.
+//   - Wrong titleZhAlt/pinyin/pinyinInitials -> fix titleZh (or title, for
+//     a Chinese-titled record with no titleZh), re-run.
 //   - Wrong py: reading -> add/fix an entry in tools/pinyin-exceptions.json
 //     (character or whole phrase -> correct reading), re-run. Don't patch
 //     the chart file by hand — see BILINGUAL-SPEC.md §5.6's own framing of
@@ -62,8 +65,8 @@
 // the generator (see tools/lib/pinyin.mjs's generateLinePinyin comment for
 // why); use a hand-authored py!: line for that lyric line instead.
 //
-// Records without titleZh, and chart files that aren't data-format
-// "bilingual", are left completely untouched.
+// Records with neither titleZh nor Han characters in title, and chart files
+// that aren't data-format "bilingual", are left completely untouched.
 //
 // ── Script detection: opencc-js's own tables, not a hand list ──
 //
@@ -117,11 +120,32 @@ function generateAltTitle(titleZh, log) {
     return titleZh;
 }
 
+// pinyin-pro emits punctuation as tokens of its own ("sheng ling ( wo men
+// ... )") — useless for search, so strip ASCII and full-width punctuation
+// and symbols from every token and drop any token left empty.
+function pinyinTokens(text, options) {
+    return pinyin(text, { ...options, toneType: 'none', type: 'array' })
+        .map(token => token.replace(/[\p{P}\p{S}\s]/gu, ''))
+        .filter(Boolean);
+}
+
 function generatePinyinFields(titleZh) {
     return {
-        pinyin: pinyin(titleZh, { toneType: 'none' }),
-        pinyinInitials: pinyin(titleZh, { pattern: 'first', toneType: 'none' }).replace(/\s+/g, '')
+        pinyin: pinyinTokens(titleZh, {}).join(' '),
+        pinyinInitials: pinyinTokens(titleZh, { pattern: 'first' }).join('')
     };
+}
+
+// The Chinese title the generated fields derive from: titleZh when present,
+// otherwise the title itself if it contains Han characters (BILINGUAL-SPEC.md
+// §7's Chinese-titled songs, which put the Chinese name in title and have no
+// titleZh). Null means the record gets no generated fields.
+const HAN_RE = /\p{Script=Han}/u;
+
+function chineseTitleSource(song) {
+    if (song.titleZh) return song.titleZh;
+    if (HAN_RE.test(song.title ?? '')) return song.title;
+    return null;
 }
 
 // ── chart-file py: injection (BILINGUAL-SPEC.md §5.6) ──
@@ -194,12 +218,13 @@ async function main() {
 
     let generatedCount = 0;
     const updated = songs.map((song) => {
-        if (!song.titleZh) return reorder(song);
+        const source = chineseTitleSource(song);
+        if (!source) return reorder(song);
 
         generatedCount++;
-        log(`${song.title} (${song.titleZh})`);
-        const titleZhAlt = generateAltTitle(song.titleZh, log);
-        const { pinyin: py, pinyinInitials } = generatePinyinFields(song.titleZh);
+        log(song.titleZh ? `${song.title} (${song.titleZh})` : `${song.title} (from title)`);
+        const titleZhAlt = generateAltTitle(source, log);
+        const { pinyin: py, pinyinInitials } = generatePinyinFields(source);
         log(`  titleZhAlt: ${titleZhAlt}`);
         log(`  pinyin: ${py}`);
         log(`  pinyinInitials: ${pinyinInitials}`);
@@ -209,7 +234,7 @@ async function main() {
 
     await writeFile(SONGS_PATH, JSON.stringify(updated, null, 2) + '\n', 'utf8');
 
-    log(`\n${updated.length} records total, ${generatedCount} with titleZh (generated fields written).`);
+    log(`\n${updated.length} records total, ${generatedCount} with a Chinese title (generated fields written).`);
     log(`Wrote ${path.relative(REPO_ROOT, SONGS_PATH)}`);
 
     // ── job 2: py: lines in v2 chart files ──

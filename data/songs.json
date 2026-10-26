@@ -48,6 +48,18 @@
     "timeSignature": "4/4 time"
   },
   {
+    "title": "愛，我願意",
+    "titleZhAlt": "爱，我愿意",
+    "pinyin": "ai wo yuan yi",
+    "pinyinInitials": "awyy",
+    "url": "charts/A/ai-wo-yuan-yi.html",
+    "format": "bilingual",
+    "langs": [
+      "en",
+      "zh-Hant"
+    ]
+  },
+  {
     "title": "Alabaster Jar",
     "url": "charts/A/alabaster-jar.html",
     "ccli": "4887630",
@@ -354,7 +366,16 @@
   },
   {
     "title": "Christ is Enough",
+    "titleZh": "基督是我滿足",
+    "titleZhAlt": "基督是我满足",
+    "pinyin": "ji du shi wo man zu",
+    "pinyinInitials": "jdswmz",
     "url": "charts/C/christ-is-enough.html",
+    "format": "bilingual",
+    "langs": [
+      "en",
+      "zh-Hant"
+    ],
     "ccli": "6514035",
     "bpm": "82",
     "timeSignature": "4/4 time"
@@ -387,7 +408,7 @@
   {
     "title": "Come Holy Spirit (City Harvest Church)",
     "titleZh": "圣灵请祢来充满我心",
-    "titleZhAlt": "聖靈請祢來充滿我心",
+    "titleZhAlt": "聖靈請禰來充滿我心",
     "pinyin": "sheng ling qing ni lai chong man wo xin",
     "pinyinInitials": "slqnlcmwx",
     "url": "charts/C/come-holy-spirit-city-harvest-church.html",
@@ -634,6 +655,18 @@
     "timeSignature": "4/4 time"
   },
   {
+    "title": "God Is Great",
+    "url": "charts/G/god-is-great.html",
+    "ccli": "3375851",
+    "bpm": "154",
+    "timeSignature": "4/4 time",
+    "format": "bilingual",
+    "langs": [
+      "en",
+      "zh-Hans"
+    ]
+  },
+  {
     "title": "God is Here",
     "url": "charts/G/god-is-here.html",
     "ccli": "6454669",
@@ -835,8 +868,8 @@
     "title": "Holy Spirit (You are welcome here)",
     "titleZh": "圣灵(我们欢迎祢)",
     "titleZhAlt": "聖靈(我們歡迎禰)",
-    "pinyin": "sheng ling ( wo men huan ying ni )",
-    "pinyinInitials": "sl(wmhyn)",
+    "pinyin": "sheng ling wo men huan ying ni",
+    "pinyinInitials": "slwmhyn",
     "url": "charts/H/holy-spirit-you-are-welcome-here.html",
     "format": "bilingual",
     "langs": [
@@ -1205,7 +1238,7 @@
   {
     "title": "Lord I Lift Your Name on High",
     "titleZh": "主我高举祢的名",
-    "titleZhAlt": "主我高舉祢的名",
+    "titleZhAlt": "主我高舉禰的名",
     "pinyin": "zhu wo gao ju ni de ming",
     "pinyinInitials": "zwgjndm",
     "url": "charts/L/lord-i-lift-your-name-on-high.html",
@@ -1589,6 +1622,18 @@
     "url": "charts/S/sweet-surrender.html"
   },
   {
+    "title": "所有的荣耀归于你",
+    "titleZhAlt": "所有的榮耀歸於你",
+    "pinyin": "suo you de rong yao gui yu ni",
+    "pinyinInitials": "sydrygyn",
+    "url": "charts/S/suo-you-de-rong-yao-gui-yu-ni.html",
+    "format": "bilingual",
+    "langs": [
+      "en",
+      "zh-Hans"
+    ]
+  },
+  {
     "title": "Take My Life and Let It Be",
     "url": "charts/T/take-my-life-and-let-it-be.html",
     "ccli": "1390",
@@ -1638,6 +1683,9 @@
     "pinyin": "shi zi jia",
     "pinyinInitials": "szj",
     "url": "charts/T/the-cross.html",
+    "ccli": "7129033",
+    "bpm": "66",
+    "timeSignature": "4/4 time",
     "format": "bilingual",
     "langs": [
       "en",
@@ -2132,7 +2180,7 @@
   {
     "title": "The Power of Your Love",
     "titleZh": "祢爱的大能",
-    "titleZhAlt": "祢愛的大能",
+    "titleZhAlt": "禰愛的大能",
     "pinyin": "ni ai de da neng",
     "pinyinInitials": "naddn",
     "url": "charts/T/the-power-of-your-love.html",
