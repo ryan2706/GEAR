@@ -1,0 +1,52 @@
+[
+  {
+    "title": "The Cross",
+    "titleZh": "十字架",
+    "url": "charts/T/the-cross.html",
+    "format": "bilingual",
+    "langs": [
+      "en",
+      "zh-Hans"
+    ]
+  },
+  {
+    "title": "Come Holy Spirit (City Harvest Church)",
+    "titleZh": "圣灵请你来充满我心",
+    "url": "charts/C/come-holy-spirit-city-harvest-church.html",
+    "format": "bilingual",
+    "langs": [
+      "en",
+      "zh-Hans"
+    ]
+  },
+  {
+    "title": "Way Maker",
+    "titleZh": "开路者",
+    "url": "charts/W/way-maker.html",
+    "format": "bilingual",
+    "langs": [
+      "en",
+      "zh-Hans"
+    ]
+  },
+  {
+    "title": "Holy Spirit (You Are Welcome Here)",
+    "titleZh": "圣灵(我们欢迎祢)",
+    "url": "charts/H/holy-spirit-you-are-welcome-here.html",
+    "format": "bilingual",
+    "langs": [
+      "en",
+      "zh-Hans"
+    ]
+  },
+  {
+    "title": "Come Fill Me Lord",
+    "titleZh": "求主充满我",
+    "url": "charts/C/come-fill-me-lord.html",
+    "format": "bilingual",
+    "langs": [
+      "en",
+      "zh-Hans"
+    ]
+  }
+]
